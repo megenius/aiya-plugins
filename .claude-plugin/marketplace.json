@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "aiya",
+  "description": "Marketplace ของปลั๊กอิน AIYA สำหรับ Claude Cowork และ Claude Code",
+  "owner": {
+    "name": "AIYA",
+    "email": "claude@aiya.ai"
+  },
+  "plugins": [
+    {
+      "name": "aiya-marketing-team",
+      "source": "./aiya-marketing-team",
+      "description": "เครื่องมือคิดการตลาด 4 ใบ (จุดเด็ด ใครก่อน รอยรั่ว ลองแล้วรู้) และตัวช่วยร่างโพสต์เพจผ่าน AiPage MCP"
+    }
+  ]
+}

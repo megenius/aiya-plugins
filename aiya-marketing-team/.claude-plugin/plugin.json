@@ -1,0 +1,9 @@
+{
+  "name": "aiya-marketing-team",
+  "description": "Marketing thinking tools and page-drafting workflow for AIYA shop owners, built on the 4-skill playbook (winning zone, who first, leak, test and learn) and the AiPage MCP connector",
+  "version": "0.1.0",
+  "author": {
+    "name": "AIYA",
+    "email": "claude@aiya.ai"
+  }
+}
