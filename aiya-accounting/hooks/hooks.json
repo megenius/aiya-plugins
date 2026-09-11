@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^(acct_pay_request_submit|acct_pay_request_approve|acct_pay_request_reject|acct_pay_request_void|acct_pay_request_unapprove|acct_pay_request_mark_paid|acct_pay_request_link_bank_txn|acct_statement_import|acct_tax_profile_set|acct_bank_txn_exempt_set|acct_bank_txn_exempt_unset|acct_bank_match_set|acct_bank_match_unset|acct_cash_account_set|acct_company_doc_add|acct_legacy_invoice_mark|acct_peak_billing_note_void|ar_unit_link|ar_unit_unlink|ar_invoice_issue_external|ar_invoice_cancel|ar_run_close|ar_run_reopen)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PLUGIN_ROOT/hooks/approval-gate.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
