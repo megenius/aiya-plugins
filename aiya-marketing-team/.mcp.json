@@ -2,5 +2,21 @@
   "aiya-page": {
     "type": "http",
     "url": "https://mcp.aiya.me/page"
+  },
+  "aiya-ads": {
+    "type": "http",
+    "url": "https://mcp.aiya.me/ads"
+  },
+  "aiya-line": {
+    "type": "http",
+    "url": "https://mcp.aiya.me/line"
+  },
+  "aiya-sales": {
+    "type": "http",
+    "url": "https://mcp.aiya.me/sales"
+  },
+  "aiya-events": {
+    "type": "http",
+    "url": "https://mcp.aiya.me/events"
   }
 }

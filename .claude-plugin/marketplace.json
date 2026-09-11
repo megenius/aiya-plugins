@@ -10,7 +10,7 @@
     {
       "name": "aiya-marketing-team",
       "source": "./aiya-marketing-team",
-      "description": "เครื่องมือคิดการตลาด 4 ใบ (จุดเด็ด ใครก่อน รอยรั่ว ลองแล้วรู้) และตัวช่วยร่างโพสต์เพจผ่าน AiPage MCP"
+      "description": "Marketing team plugin for AIYA shop owners: marketing-lead agent orchestrating page-admin/ads-buyer/analyst/content-writer/creative-director/reviewer sub-agents, a 10-skill playbook (winning zone, who first, leak, test and learn, month plan, brand content, safe ads, weekly review, approval gate, Thai calendar), slash commands for ads, approvals, audience RFM, calendar, experiments, and reviews, page/LINE/ads/sales/events MCP connectors, and draft-first workflows that never publish without owner approval"
     }
   ]
 }
