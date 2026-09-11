@@ -54,3 +54,9 @@ description: Use when the shop owner asks "what should we talk about", "what is 
 
 - ใช้จุดขายที่ได้เป็นแกนของ `month-plan` (ธีมของเดือน) และเป็นวัตถุดิบให้ `brand-content` ร่างเนื้อหา
 - ถ้ามีเทศกาล/วันสำคัญมาเกี่ยว ดู `thai-calendar` ก่อนผูกจุดขายเข้ากับช่วงเวลานั้น
+
+<!-- mcp-tools -->
+- `mkt_competitor_run`
+- `mkt_listen_run`
+- `product_list`
+<!-- /mcp-tools -->

@@ -67,3 +67,8 @@ description: Use when proposing any campaign, message, or promotion, or when the
 
 - `weekly-review` เรียก `mkt_outcome_list` เพื่อรายงานสถานะการทดลองที่ผูกกับใบประกาศของ skill นี้
 - แคมเปญโฆษณาที่จะใช้เป็นแบบ ก/ข ต้องผ่าน `safe-ads` ก่อนเสมอ (เพดานงบ + PAUSED)
+
+<!-- mcp-tools -->
+- `customer_segments`
+- `mkt_outcome_list`
+<!-- /mcp-tools -->

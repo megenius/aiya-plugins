@@ -68,13 +68,13 @@
 ### Claude Cowork
 
 1. เปิดหน้าตั้งค่า Plugin ของ Cowork
-2. เพิ่ม marketplace จาก repo นี้: `megenius/aiya-platform-v3`
+2. เพิ่ม marketplace จาก repo นี้: `megenius/aiya-plugins`
 3. ติดตั้งปลั๊กอิน `aiya-marketing-team`
 
 ### Claude Code (CLI)
 
 ```
-/plugin marketplace add megenius/aiya-platform-v3
+/plugin marketplace add megenius/aiya-plugins
 /plugin install aiya-marketing-team@aiya
 ```
 

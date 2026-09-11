@@ -60,3 +60,7 @@ description: Use when the shop owner asks "why aren't sales going up", "what sho
 
 - `weekly-review` ใช้ป้าย `วัดจากระบบ` ของ skill นี้เป็นฐานเทียบสัปดาห์ ไม่ต้องอธิบายฟันเนลซ้ำที่นั่น
 - รอยรั่วใหญ่ที่เจอ ให้ใส่เป็นงานแก้ก่อนของ `month-plan` ก่อนไปหาลูกค้าใหม่
+
+<!-- mcp-tools -->
+- `mkt_listen_run`
+<!-- /mcp-tools -->

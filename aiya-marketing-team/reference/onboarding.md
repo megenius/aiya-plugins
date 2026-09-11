@@ -59,3 +59,7 @@ description: Step-by-step onboarding for connecting a Facebook page, LINE OA, an
 - ลองรันเดโม 3 ขั้นใน README ให้ครบ 1 รอบ
 - อ่าน `reference/credits-and-costs.md` ก่อนคุยเรื่องค่าใช้จ่ายกับลูกค้า
 - เช็กโฆษณาที่จะร่างด้วย `reference/thai-ad-rules.md` ทุกครั้งก่อน publish
+
+<!-- mcp-tools -->
+ไม่มี tool ที่ต้องประกาศ
+<!-- /mcp-tools -->

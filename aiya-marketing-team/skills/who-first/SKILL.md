@@ -61,3 +61,7 @@ description: Use when the shop owner asks "who should we follow up with first", 
 
 - ใช้กองลูกค้าที่เลือกเป็นอินพุตของ `month-plan` (เลือกใครก่อนของเดือน)
 - ยิงข้อความหากองไหนที่มากกว่า 1 คน ต้องผ่าน `approval-gate` ก่อนส่งจริงเสมอ
+
+<!-- mcp-tools -->
+- `customer_segments`
+<!-- /mcp-tools -->
