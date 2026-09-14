@@ -37,7 +37,7 @@ description: Step-by-step onboarding for connecting a Facebook page, LINE OA, an
 1. ให้เจ้าของร้านล็อกอินด้วยบัญชี Facebook ที่เป็นแอดมินของเพจ
 2. ยืนยันสิทธิ์ (permission) ที่ระบบขอ อ่านทุกข้อก่อนกดยอมรับ
 3. เลือกเพจที่จะต่อ (กรณีมีหลายเพจ เลือกเฉพาะเพจของร้าน)
-4. ทดสอบ: ให้ agent ปลาย (mkt_content) ดึงข้อมูลเพจ ถ้าได้ชื่อเพจและข้อมูลล่าสุด = ผ่าน
+4. ทดสอบ: ดึงรายชื่อเพจ (`page_list`) จาก connector เอง ถ้าเห็นชื่อเพจและข้อมูลล่าสุด = ผ่าน (ไม่ใช่ผ่าน agent ปลาย mkt_content · ตำแหน่งนี้ไม่ได้ถือเครื่องมือเพจ ดู `team-marketing.ts` extraTools)
 
 ## 2. ต่อ LINE Official Account (aiya-line)
 

@@ -1,7 +1,7 @@
 {
   "name": "aiya-accounting",
   "displayName": "AIYA ทีมบัญชี",
-  "version": "0.2.3",
+  "version": "1.0.0-alpha",
   "description": "คู่มือกำกับขั้นตอนงานบัญชีสำหรับผู้ที่ต่อ MCP ของ AIYA ไว้แล้ว (กระดานงาน · ใบตั้งเบิก · วางบิล · ปฏิทินภาษี)",
   "author": {
     "name": "AIYA",

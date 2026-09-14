@@ -1,0 +1,8 @@
+{
+  "name": "aiya-chat-team",
+  "description": "Chat quality team plugin for AIYA shop owners: a 3 position team (chat_head, chat_responder, chat_followup) matching the AIYA chat team itself, an 8-skill playbook (answer from knowledge, brand voice, handoff to human, triage urgency, price and stock reply, buying signal to sales, daily room digest, apology and remedy), draft-first workflows that never send a message to a real customer without a human clicking send",
+  "version": "1.0.0-alpha",
+  "author": {
+    "name": "AIYA"
+  }
+}

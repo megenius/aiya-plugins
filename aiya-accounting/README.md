@@ -37,7 +37,7 @@
 
 ## ขั้นที่ 2 ล็อกอิน connector aiya-agents
 
-ปลั๊กอินนี้ประกาศ connector `aiya-agents` (`https://agents.aiya.me/mcp`) ไว้ใน `.mcp.json`
+ปลั๊กอินนี้ประกาศ connector `aiya-agents` (`https://mcp.aiya.me/mcp`) ไว้ใน `.mcp.json`
 ต้องล็อกอินแบบ OAuth ครั้งแรกก่อนใช้
 
 1. หลังติดตั้งปลั๊กอิน เปิดหน้าจัดการ MCP connector ของ Claude (ใน Claude Code ใช้ `/mcp` แล้วเลือก `aiya-agents`)

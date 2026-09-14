@@ -1,0 +1,24 @@
+NOTICE · aiya-marketing-team
+
+ความรู้ในสกิลต่อไปนี้ดูดมาจากโปรเจกต์ LINE Ads MCP Server (Apache-2.0):
+
+  line-ads-basics
+  line-ads-targeting
+  line-ads-kpi-benchmark
+  line-ads-creative-specs
+  line-ads-bidding-budget
+  line-ads-campaign-workflow
+
+ที่มา: LINE Ads MCP Server
+โดย ประภาส ศรีสุมะ (Ong), Spark Factor Co., Ltd. (https://sparkth.io) · LINE Certified Coach
+Repo ต้นทาง: github.com/ongkub/line-ads-mcp
+สัญญาอนุญาต: Apache License 2.0
+
+ตามข้อกำหนดของ NOTICE ต้นทาง เอกสาร/หน้าที่ผู้ใช้เห็นซึ่งอ้างอิงความรู้ชุดนี้ต้องระบุเครดิต:
+
+  "อ้างอิงจาก LINE Ads MCP Server โดย ประภาส ศรีสุมะ (Ong),
+   Spark Factor Co., Ltd. (https://sparkth.io) · LINE Certified Coach"
+
+หมายเหตุ: เฟส 1 นี้ดูดเฉพาะความรู้ (benchmark, spec, กติกา, ขั้นตอน) ไม่ได้ใช้โค้ดหรือ
+สูตร auth ใดๆ จากโปรเจกต์ต้นทาง และ AIYA ยังไม่มีเครื่องมือ MCP ที่ยิงโฆษณา LINE จริง
+การสร้าง/แก้/เปิดแคมเปญ LINE Ads วันนี้ต้องทำใน LINE Ads Manager (admanager.line.biz) เอง
