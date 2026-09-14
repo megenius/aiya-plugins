@@ -1,17 +1,17 @@
 ---
-description: Draft a page post that matches the shop's brand voice and selling point, via the page-admin agent
+description: Draft a page post that matches the shop's brand voice and selling point, via the mkt_content agent
 argument-hint: <หัวข้อโพสต์ หรือ โอกาส/แคมเปญ>
 ---
 
 # /draft-post
 
-ร่างโพสต์เพจเรื่อง $ARGUMENTS โดยใช้ agent `page-admin`
+ร่างโพสต์เพจเรื่อง $ARGUMENTS โดยใช้ agent ปลาย (mkt_content)
 
 ## ขั้นตอน
 
 1. ถ้ายังไม่รู้จุดขายของร้าน ให้เรียก skill **จุดเด็ด (winning-zone)** ก่อน เพื่อให้โพสต์ยึดจุดขายจริง ไม่ใช่คิดเอง
 2. อ่านเสียงแบรนด์/โทนของร้านจากบริบทที่มี หรือถามเจ้าของ 1 คำถามถ้าไม่มี
-3. ร่างโพสต์ 1 ชิ้นผ่าน `page-admin` พร้อมคำโปรยและคำแนะนำภาพ
+3. ร่างโพสต์ 1 ชิ้นผ่าน ปลาย (mkt_content) พร้อมคำโปรยและคำแนะนำภาพ
 4. แสดงร่างเต็มให้เจ้าของดู ถามว่าจะแก้อะไรไหม
 5. **ห้าม publish จนกว่าเจ้าของจะพิมพ์ยืนยันชัดเจนในเทิร์นนี้** แม้ผู้ใช้จะรีบก็ตาม
 

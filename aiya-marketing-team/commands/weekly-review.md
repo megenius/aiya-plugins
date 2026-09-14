@@ -5,7 +5,7 @@ argument-hint: [ชื่อร้าน หรือ workspace ถ้ามี�
 
 # /weekly-review
 
-วัดผลสัปดาห์นี้ของร้าน $ARGUMENTS เป็นภาษาคน ให้ agent `marketing-lead` สรุปออกมา **3 ข้อเท่านั้น**
+วัดผลสัปดาห์นี้ของร้าน $ARGUMENTS เป็นภาษาคน ให้ agent แนน (mkt_head) สรุปออกมา **3 ข้อเท่านั้น**
 
 ## ขั้นตอน
 

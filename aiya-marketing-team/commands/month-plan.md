@@ -5,7 +5,7 @@ argument-hint: [ชื่อร้าน หรือ workspace ถ้ามี�
 
 # /month-plan
 
-ทำแผนการตลาด 1 เดือนให้ร้าน $ARGUMENTS โดยใช้ agent `marketing-lead`
+ทำแผนการตลาด 1 เดือนให้ร้าน $ARGUMENTS โดยใช้ agent แนน (mkt_head)
 
 ## ขั้นตอน
 

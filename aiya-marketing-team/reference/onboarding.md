@@ -23,7 +23,7 @@ description: Step-by-step onboarding for connecting a Facebook page, LINE OA, an
 > "ยังเชื่อมต่อ LINE Official Account ของร้านไม่ได้ เปิดเมนูเชื่อมต่อเครื่องมือแล้วกด login ด้วยบัญชีแอดมิน LINE OA ก่อน ถึงจะดึงตัวเลขให้ได้ครับ"
 
 ตัวอย่างประโยคที่ผิด (หลุดชื่อระบบภายใน ห้ามพูดแบบนี้):
-> "เรียก aiya-line ไม่ติดเพราะ connector ยังไม่ login และ analyst เรียก mkt_outcome_list ไม่สำเร็จ"
+> "เรียก aiya-line ไม่ติดเพราะ connector ยังไม่ login และ mkt_research เรียก mkt_outcome_list ไม่สำเร็จ"
 
 ## 0. ติดตั้งและล็อกอิน connector (ครั้งแรกเท่านั้น)
 
@@ -37,7 +37,7 @@ description: Step-by-step onboarding for connecting a Facebook page, LINE OA, an
 1. ให้เจ้าของร้านล็อกอินด้วยบัญชี Facebook ที่เป็นแอดมินของเพจ
 2. ยืนยันสิทธิ์ (permission) ที่ระบบขอ อ่านทุกข้อก่อนกดยอมรับ
 3. เลือกเพจที่จะต่อ (กรณีมีหลายเพจ เลือกเฉพาะเพจของร้าน)
-4. ทดสอบ: ให้ agent `page-admin` ดึงข้อมูลเพจ ถ้าได้ชื่อเพจและข้อมูลล่าสุด = ผ่าน
+4. ทดสอบ: ให้ agent ปลาย (mkt_content) ดึงข้อมูลเพจ ถ้าได้ชื่อเพจและข้อมูลล่าสุด = ผ่าน
 
 ## 2. ต่อ LINE Official Account (aiya-line)
 

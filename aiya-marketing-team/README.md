@@ -2,11 +2,11 @@
 
 ปลั๊กอิน Claude Cowork / Claude Code สำหรับทีมการตลาด AI ของร้านค้า AIYA
 รวมเครื่องมือคิดการตลาด 10 ใบ (จากเพลย์บุ๊ก `positions/PLAYBOOK-mar-thinking-tools-20260910.md`)
-+ ทีม agent 7 ตัวคุมโดย `marketing-lead` + ตัวช่วยร่างโพสต์เพจผ่าน connector AiPage และอีก 4 connector (แอด/LINE/ทีมขาย/อีเวนต์)
++ ทีม agent 9 ตำแหน่งเดียวกับสมองกลางของ AIYA คุมโดย แนน (mkt_head) + connector 6 ตัว (เพจ/แอด/LINE/ทีมขาย/อีเวนต์/ท่อวางแผนอัตโนมัติ)
 
 ## สิ่งที่อยู่ในปลั๊กอิน
 
-### Connectors (5 ตัว)
+### Connectors (6 ตัว)
 
 | ชื่อ | URL | ใช้ทำอะไร |
 |---|---|---|
@@ -15,8 +15,13 @@
 | `aiya-line` | `https://mcp.aiya.me/line` | ผู้ติดตามและข้อความ LINE OA |
 | `aiya-sales` | `https://mcp.aiya.me/sales` | ข้อมูลทีมขาย/ออเดอร์ |
 | `aiya-events` | `https://mcp.aiya.me/events` | ปฏิทินอีเวนต์/กิจกรรมร้าน |
+| `aiya-agents` | `https://agents.aiya.me/mcp` | ท่อวางแผน-สร้างภาพ-ตรวจ-จัดคิวรายสัปดาห์ (`mkt_*`) และคู่มือแพลตฟอร์ม |
 
 ทุกตัวเป็น HTTP + OAuth (ยังไม่ล็อกอินจะได้ 401) วิธีล็อกอินอยู่ใน `reference/onboarding.md`
+
+## ท่อทีมการตลาด (weekly plan pipeline)
+
+Connector `aiya-agents` เปิดทางให้ทีม AI ภายใน (แนน/มิ้นท์/กัน/ตาล) เดินท่อวางแผนสัปดาห์ต่อจากใบประกาศผลลัพธ์ที่เจ้าของประกาศไว้: `mkt_plan_propose` เสนอแผน → เจ้าของกด `mkt_plan_approve` เอง (P2 ห้ามกดแทน) → `mkt_creative_run` ดูคิวสร้างภาพ → `mkt_review_run` ตรวจร่างกับคำต้องห้าม/ราคาโปร/คำชวน → `mkt_handoff_run` ส่งร่างขึ้นปฏิทินเพจ → `mkt_queue_run` จัดคิวช่องเวลา จบที่ "รอเจ้าของกด" เสมอ ไม่มีขั้นไหนโพสต์ขึ้นเพจ/LINE จริงหรือใช้เงินจากในแชทได้เลย ดูรายละเอียดในสกิล `month-plan` และ `test-and-learn`
 
 ### Skills (10 ใบ)
 
@@ -33,28 +38,32 @@
 | `approval-gate` | เช็กก่อนอนุมัติ | อะไรต้องให้คนกดก่อน |
 | `thai-calendar` | ปฏิทินไทย | เทศกาล/วันสำคัญ + เช็กลิสต์ก่อนเผยแพร่ |
 
-### Agents (7 ตัว)
+### Agents (9 ตำแหน่ง)
 
-- `marketing-lead` วางแผน แตกงาน มอบงาน 6 ตำแหน่ง
-- `page-admin` ร่างโพสต์/ตอบเพจ ทุกอย่างเป็นร่างก่อน ไม่ publish เอง
-- `content-writer` ร่างแคปชั่น/คำโปรย/ข้อความแคมเปญ
-- `creative-director` บรีฟภาพ/วิดีโอ + gen ผ่าน `aiya-page` ถ้ามี tool
-- `ads-buyer` ยิงแอดผ่าน `aiya-ads` แบบ prepare/confirm
-- `analyst` เรียก skills แทน รายงานตัวเลขพร้อมป้ายกำกับ
-- `reviewer` เดวิลส์แอดโวเคตก่อนอนุมัติ อ่านอย่างเดียว
+ชื่อไฟล์ = id ตำแหน่งเดียวกับสมองกลางของ AIYA (ด่าน apps/api/test/plugin-agents-team.ts เฝ้าให้ตรงกัน)
+
+- แนน (mkt_head) หัวหน้า แปลงใบประกาศผลลัพธ์เป็นแผนสัปดาห์ แล้วมอบงานต่อ
+- วิว (mkt_research) วิจัยตลาดและผู้ฟัง จากแชทจริงของร้าน
+- เฟิร์น (mkt_competitor) สืบคู่แข่งจากบันทึกที่คนของร้านกรอกไว้
+- โบว์ (mkt_ads) แอดและผลลัพธ์ ผ่าน `aiya-ads` แบบ prepare/confirm
+- ปลาย (mkt_content) เขียนคอนเทนต์ ร่าง 3 โทน ไม่โพสต์เอง
+- มิ้นท์ (mkt_creative) ครีเอทีฟและภาพ บรีฟภาพ + สร้างภาพร่าง
+- กัน (mkt_reviewer) ตรวจก่อนส่ง 3 ด่าน กันแต่งข้อมูล
+- ตาล (mkt_scheduler) คิวและตารางโพสต์ หยิบเฉพาะชิ้นที่ตรวจผ่าน
+- ฟ้า (mkt_report) รายงานผล ขึ้นต้นด้วยผลลัพธ์ที่ประกาศไว้
 
 ### Commands (10 คำสั่ง)
 
-- `/month-plan` วางแผนเดือนผ่าน agent `marketing-lead`
-- `/draft-post <หัวข้อ>` ร่างโพสต์ผ่าน agent `page-admin` (รอยืนยันก่อน publish)
+- `/month-plan` วางแผนเดือนผ่าน agent แนน (mkt_head)
+- `/draft-post <หัวข้อ>` ร่างโพสต์ผ่าน agent ปลาย (mkt_content) (รอเจ้าของกดก่อนลงจริง)
 - `/weekly-review` สรุปผลสัปดาห์เป็นภาษาคน 3 ข้อ จากตัวเลขจริงเท่านั้น
-- `/calendar` วางปฏิทินเนื้อหาสัปดาห์/เดือน ผ่าน `content-writer` + `creative-director`
-- `/ads` ดูผลแอดหรือตั้ง/ปรับงบแอดผ่าน `ads-buyer`
-- `/audience-rfm` แบ่งกองลูกค้า 5 กองผ่าน `analyst`
-- `/leak` หารอยรั่วฟันเนลแชทผ่าน `analyst`
-- `/experiment` ออกแบบ/อ่านผลการทดลอง A/B ผ่าน `analyst`
-- `/approvals` ดูคิวงานรออนุมัติผ่าน `reviewer`
-- `/owner-summary` สรุปสัปดาห์ให้เจ้าของร้านผ่าน `marketing-lead`
+- `/calendar` วางปฏิทินเนื้อหาสัปดาห์/เดือน ผ่าน ปลาย (mkt_content) + มิ้นท์ (mkt_creative)
+- `/ads` ดูผลแอดหรือตั้ง/ปรับงบแอดผ่าน โบว์ (mkt_ads)
+- `/audience-rfm` แบ่งกองลูกค้า 5 กองผ่าน วิว (mkt_research)
+- `/leak` หารอยรั่วฟันเนลแชทผ่าน วิว (mkt_research)
+- `/experiment` ออกแบบ/อ่านผลการทดลอง A/B ผ่าน วิว (mkt_research)
+- `/approvals` ดูคิวงานรออนุมัติผ่าน กัน (mkt_reviewer)
+- `/owner-summary` สรุปสัปดาห์ให้เจ้าของร้านผ่าน แนน (mkt_head)
 
 ### Reference (4 ไฟล์)
 
@@ -89,15 +98,15 @@
 2. เลือก connector ที่จะใช้ กด login/authorize ด้วยบัญชี AIYA ของร้าน
 3. ยืนยันสิทธิ์ (scope) ที่ขอ แล้วกลับมาที่ Claude เมื่อเห็นสถานะ connected แปลว่าใช้งานได้
 
-ถ้า connector ขึ้นว่าไม่ต่อติดหรือหมดอายุ ให้ login ใหม่ผ่านขั้นตอนเดียวกัน agent `page-admin` และ `ads-buyer`
+ถ้า connector ขึ้นว่าไม่ต่อติดหรือหมดอายุ ให้ login ใหม่ผ่านขั้นตอนเดียวกัน agent ปลาย (mkt_content) และ โบว์ (mkt_ads)
 จะบอกตรงๆ เมื่อเรียกเครื่องมือแล้วเจอปัญหานี้ ไม่แกล้งทำว่าทำงานสำเร็จ
 ขั้นตอนต่อเพจ/LINE/แอดทีละขั้นอยู่ใน `reference/onboarding.md`
 
 ## เดโม 3 ขั้น
 
-1. **วางแผนเดือน** พิมพ์ `/month-plan` ระบบจะเรียก agent `marketing-lead` ใช้เครื่องมือคิด 4 ใบ
+1. **วางแผนเดือน** พิมพ์ `/month-plan` ระบบจะเรียก agent แนน (mkt_head) ใช้เครื่องมือคิด 4 ใบ
    (จุดเด็ด → ใครก่อน → รอยรั่ว → ลองแล้วรู้) แล้วสรุปเป็นแผน 1 เดือน
-2. **ร่างโพสต์** พิมพ์ `/draft-post <หัวข้อ>` ระบบจะเรียก agent `page-admin` ร่างโพสต์ตามจุดขายและเสียงแบรนด์ร้าน
+2. **ร่างโพสต์** พิมพ์ `/draft-post <หัวข้อ>` ระบบจะเรียก agent ปลาย (mkt_content) ร่างโพสต์ตามจุดขายและเสียงแบรนด์ร้าน
    เช็กข้อห้ามโฆษณากับ `reference/thai-ad-rules.md` แสดงร่างให้ดูก่อนเสมอ **ไม่ publish จนกว่าจะพิมพ์ยืนยัน**
 3. **ดูผลสัปดาห์** พิมพ์ `/weekly-review` ระบบจะสรุปผลสัปดาห์นี้เป็นภาษาคน 3 ข้อ จากตัวเลขจริงเท่านั้น
    อ่านตัวเลขด้วยนิยามใน `reference/metrics-benchmarks.md`
@@ -111,7 +120,7 @@
 | ใครใช้ | เจ้าของร้านคนเดียว | มีคนช่วย 1-2 คน | ทีมการตลาดเต็มตัว |
 | Connector | `aiya-page` | + `aiya-line` `aiya-events` | ครบทั้ง 5 ตัว (รวม `aiya-ads` `aiya-sales`) |
 | Skills | 4 ใบ (คิดเองตามเพลย์บุ๊ก) | 4 ใบ + ตั้งเวลารีวิวอัตโนมัติ | 4 ใบ + วางแผน/รีวิว/ทดลองแคมเปญ |
-| Agents | ใช้เป็นที่ปรึกษา ไม่มี agent ประจำ | `marketing-lead` | ครบทั้ง `marketing-lead` และ `page-admin` |
+| Agents | ใช้เป็นที่ปรึกษา ไม่มี agent ประจำ | แนน (mkt_head) | ครบทั้ง 9 ตำแหน่ง |
 | การ publish | เจ้าของคิดเอง เขียนเอง | ร่างให้ เจ้าของตัดสินใจทุกชิ้น | ร่าง+เช็กกติกาโฆษณาให้ เจ้าของกดยืนยันทุกชิ้น |
 
 หลักเดียวกันทุกระดับ: AI ร่างได้แต่ห้าม publish ห้ามส่ง ห้ามใช้เงินโดยไม่มีคนกดยืนยัน
@@ -120,20 +129,20 @@
 
 | คำสั่ง | ใช้เมื่อ | agent/skill ที่ผูก |
 |---|---|---|
-| `/calendar` | วางปฏิทินเนื้อหาสัปดาห์/เดือน | `content-writer` + `creative-director` |
-| `/ads` | ดูผลแอดหรือตั้ง/ปรับงบแอด | `ads-buyer` (connector `aiya-ads` แบบ prepare/confirm) |
-| `/audience-rfm` | แบ่งกองลูกค้า 5 กอง | `analyst` เรียก skill **ใครก่อน** |
-| `/leak` | หารอยรั่วฟันเนลแชท | `analyst` เรียก skill **รอยรั่ว** |
-| `/experiment` | ออกแบบ/อ่านผลการทดลอง A/B | `analyst` เรียก skill **ลองแล้วรู้** |
-| `/approvals` | ดูคิวงานรออนุมัติ | `reviewer` |
-| `/owner-summary` | สรุปสัปดาห์ให้เจ้าของร้าน | `marketing-lead` คุม `analyst` + `reviewer` |
+| `/calendar` | วางปฏิทินเนื้อหาสัปดาห์/เดือน | ปลาย (mkt_content) + มิ้นท์ (mkt_creative) |
+| `/ads` | ดูผลแอดหรือตั้ง/ปรับงบแอด | โบว์ (mkt_ads) (connector `aiya-ads` แบบ prepare/confirm) |
+| `/audience-rfm` | แบ่งกองลูกค้า 5 กอง | วิว (mkt_research) เรียก skill **ใครก่อน** |
+| `/leak` | หารอยรั่วฟันเนลแชท | วิว (mkt_research) เรียก skill **รอยรั่ว** |
+| `/experiment` | ออกแบบ/อ่านผลการทดลอง A/B | วิว (mkt_research) เรียก skill **ลองแล้วรู้** |
+| `/approvals` | ดูคิวงานรออนุมัติ | กัน (mkt_reviewer) |
+| `/owner-summary` | สรุปสัปดาห์ให้เจ้าของร้าน | แนน (mkt_head) คุม วิว (mkt_research) + กัน (mkt_reviewer) |
 
 ## โครงสร้าง
 
 ```
 aiya-marketing-team/
 ├── .claude-plugin/plugin.json
-├── .mcp.json                    # connector 5 ตัว (page, ads, line, sales, events)
+├── .mcp.json                    # connector 6 ตัว (page, ads, line, sales, events, agents)
 ├── reference/
 │   ├── thai-ad-rules.md         # ข้อห้ามโฆษณาไทย (สรุปสั้น)
 │   ├── metrics-benchmarks.md    # นิยามตัวชี้วัดและวิธีอ่าน
@@ -151,13 +160,15 @@ aiya-marketing-team/
 │   ├── approval-gate/SKILL.md   # เช็กลิสต์: อะไรต้องให้คนกดก่อน
 │   └── thai-calendar/SKILL.md   # เทศกาล/วันสำคัญไทย + เช็กลิสต์ก่อนเผยแพร่
 ├── agents/
-│   ├── marketing-lead.md        # วางแผน แตกงาน มอบงาน 6 ตำแหน่ง
-│   ├── page-admin.md            # ร่างโพสต์/ตอบเพจ ทุกอย่างเป็นร่างก่อน
-│   ├── content-writer.md        # ร่างแคปชั่น/คำโปรย/ข้อความแคมเปญ
-│   ├── creative-director.md     # บรีฟภาพ/วิดีโอ + gen ผ่าน aiya-page ถ้ามี tool
-│   ├── ads-buyer.md             # ยิงแอดผ่าน aiya-ads แบบ prepare/confirm
-│   ├── analyst.md               # เรียก skill 4 ใบแทน รายงานตัวเลขพร้อมป้ายกำกับ
-│   └── reviewer.md              # เดวิลส์แอดโวเคตก่อนอนุมัติ อ่านอย่างเดียว
+│   ├── mkt_head.md              # แนน หัวหน้า วางแผนสัปดาห์ แตกงาน มอบงาน
+│   ├── mkt_research.md          # วิว วิจัยตลาดและผู้ฟัง จากแชทจริง
+│   ├── mkt_competitor.md        # เฟิร์น สืบคู่แข่งจากบันทึกของร้าน
+│   ├── mkt_ads.md               # โบว์ แอดและผลลัพธ์ แบบ prepare/confirm
+│   ├── mkt_content.md           # ปลาย เขียนคอนเทนต์ ร่าง 3 โทน
+│   ├── mkt_creative.md          # มิ้นท์ ครีเอทีฟและภาพ
+│   ├── mkt_reviewer.md          # กัน ตรวจก่อนส่ง 3 ด่าน
+│   ├── mkt_scheduler.md         # ตาล คิวและตารางโพสต์
+│   └── mkt_report.md            # ฟ้า รายงานผลเข้าเจ้าของ
 └── commands/
     ├── month-plan.md            # /month-plan
     ├── draft-post.md            # /draft-post
@@ -174,9 +185,9 @@ aiya-marketing-team/
 ## กติกาความปลอดภัย
 
 - ทีมนี้เป็นระดับอำนาจ 2 เท่านั้น ไม่โพสต์เอง ไม่ส่งข้อความเอง ไม่ใช้เงิน
-- `page-admin` ต้องได้คำยืนยันชัดเจนจากเจ้าของร้านในข้อความนั้นก่อนจะ publish หรือส่งคำตอบจริงทุกครั้ง
-- `ads-buyer` ต้องผ่านขั้นเตรียม (prepare) ก่อนเสมอ และต้องได้คำยืนยันชัดเจนก่อนเรียกขั้นยืนยัน (confirm) ที่ใช้เงินจริง
-- `reviewer` ให้ความเห็นก่อนอนุมัติเท่านั้น ไม่ใช่ผู้อนุมัติ และไม่แก้ร่างเอง
+- ปลาย (mkt_content) ร่างอย่างเดียว การลงจริงต้องให้เจ้าของกดเองในระบบ ตาล (mkt_scheduler) ได้แค่จองเวลาเข้าคิว
+- โบว์ (mkt_ads) ต้องผ่านขั้นเตรียม (prepare) ก่อนเสมอ และต้องได้คำยืนยันชัดเจนก่อนเรียกขั้นยืนยัน (confirm) ที่ใช้เงินจริง
+- กัน (mkt_reviewer) ให้ความเห็นก่อนอนุมัติเท่านั้น ไม่ใช่ผู้อนุมัติ และไม่แก้ร่างเอง
 - ตัวเลขทุกตัวในรายงานต้องมาจากเครื่องมือ MCP จริง ห้ามเดา ข้อมูลไม่พอให้บอกว่า "ยังไม่รู้" ตรงๆ
 - โฆษณาทุกชิ้นเช็กข้อห้ามกับ `reference/thai-ad-rules.md` ก่อนขอยืนยัน publish
 - ห้ามสัญญาเรื่องราคา โปรโมชั่น หรือตัวเลขผลลัพธ์ที่ไม่มีข้อมูลจริงรองรับ

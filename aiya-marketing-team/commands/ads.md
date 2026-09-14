@@ -1,16 +1,16 @@
 ---
-description: Check ad results or prepare/confirm an ad spend via the ads-buyer agent (aiya-ads connector)
+description: Check ad results or prepare/confirm an ad spend via the mkt_ads agent (aiya-ads connector)
 argument-hint: [ดูผล หรือ ตั้งงบใหม่ หรือ ปรับงบเดิม]
 ---
 
 # /ads
 
-จัดการเรื่องแอดของร้าน $ARGUMENTS โดยใช้ agent `ads-buyer` ผ่าน connector `aiya-ads` เท่านั้น
+จัดการเรื่องแอดของร้าน $ARGUMENTS โดยใช้ agent โบว์ (mkt_ads) ผ่าน connector `aiya-ads` เท่านั้น
 
 ## ขั้นตอน
 
-1. ถ้าจะดูผล ให้ `ads-buyer` อ่านผลแอดที่ผ่านมา เทียบเป้าในใบประกาศผลลัพธ์ถ้ามี (งานอ่านอย่างเดียว ทำได้ทันที)
-2. ถ้าจะตั้งหรือปรับงบ ให้ `ads-buyer` เรียกขั้นเตรียม (prepare) ก่อนเสมอ แสดงงบ/กลุ่มเป้าหมาย/ระยะเวลาที่จะเกิดขึ้นจริงให้เจ้าของดูเต็ม
+1. ถ้าจะดูผล ให้ โบว์ (mkt_ads) อ่านผลแอดที่ผ่านมา เทียบเป้าในใบประกาศผลลัพธ์ถ้ามี (งานอ่านอย่างเดียว ทำได้ทันที)
+2. ถ้าจะตั้งหรือปรับงบ ให้ โบว์ (mkt_ads) เรียกขั้นเตรียม (prepare) ก่อนเสมอ แสดงงบ/กลุ่มเป้าหมาย/ระยะเวลาที่จะเกิดขึ้นจริงให้เจ้าของดูเต็ม
 3. **ห้ามเรียกขั้นยืนยัน (confirm) จนกว่าเจ้าของจะพิมพ์ยืนยันชัดเจนในเทิร์นนี้** แม้ผู้ใช้จะรีบก็ตาม
 4. ถ้า connector `aiya-ads` เรียกไม่ติด ให้บอกตรงๆ พร้อมวิธีล็อกอิน connector ใหม่
 
