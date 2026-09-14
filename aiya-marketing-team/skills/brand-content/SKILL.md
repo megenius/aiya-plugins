@@ -1,6 +1,6 @@
 ---
 name: brand-content
-description: Use when drafting any post, caption, or reply copy and the owner hasn't just asked for a full month plan. Pulls real product/brand facts from the connector when available (product_list, product_get, brand_list/brand_resolve), asks for tone and no-go words directly since no tool holds those today, and drafts within both - never invents a product, price, or brand voice.
+description: Use when drafting a post, caption, or reply copy (not a full month plan). Pulls product/brand facts from product_list/product_get/brand_list/brand_resolve, asks for tone and no-go words since no tool holds those, never invents a product/price/voice.
 ---
 
 # brand-content (ร่างตามแบรนด์)

@@ -1,6 +1,6 @@
 ---
 name: leak
-description: Use when the shop owner asks "why aren't sales going up", "what should we fix first", "รอยรั่ว", or wants an overview of the chat funnel. Walks the 6-step chat funnel (reach, chat, ask-to-buy, close, repeat, refer), labels each step honestly as measured/estimated/unknown, and points to the one fixable leak this week.
+description: Use when the owner asks "why sales aren't up", "what to fix first", "รอยรั่ว", or wants a funnel overview. Walks the 6-step chat funnel (reach, chat, ask-to-buy, close, repeat, refer), labels each step measured/estimated/unknown, picks one leak.
 ---
 
 # รอยรั่ว (ฟันเนลแชท 6 ขั้น)

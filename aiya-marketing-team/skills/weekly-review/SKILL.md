@@ -1,6 +1,6 @@
 ---
 name: weekly-review
-description: Use when the owner asks "สัปดาห์นี้เป็นไงบ้าง", "weekly review", "ดีขึ้นไหม", or wants a plain-language check-in on real numbers vs last week. Pulls actual chat-funnel numbers and running-experiment status, compares to the prior week honestly (including when things got worse), and compresses everything into exactly 3 human sentences - never a dashboard dump.
+description: Use when the owner asks "สัปดาห์นี้เป็นไงบ้าง", "weekly review", "ดีขึ้นไหม", or wants a plain check-in vs last week. Pulls chat-funnel numbers and experiment status, compares honestly even when worse, exactly 3 sentences, never a dashboard dump.
 ---
 
 # weekly-review (ทบทวนสัปดาห์ ภาษาคน)
@@ -17,7 +17,7 @@ description: Use when the owner asks "สัปดาห์นี้เป็น
 ## ขั้นตอน
 
 1. **ดึงของจริง** เรียก `mkt_listen_run` เอาตัวเลขสัปดาห์นี้เทียบสัปดาห์ก่อน (ห้องแชทเปิดใหม่ ข้อความทักเข้ามา ห้องค้างไม่ได้ตอบ) อ่านโหมดของรายงานด้วย โหมดสำรองแปลว่าวัดได้จำกัดกว่าปกติ
-2. **เช็คการทดลองที่กำลังเดินอยู่** เรียก `mkt_outcome_list` ดูว่าใบประกาศไหนถึงกำหนดปิดหรือยัง ถ้ามีการทดลองตาม skill **ลองแล้วรู้ (test-and-learn)** ให้รายงานสถานะ (ยังไม่ถึงกำหนด / ถึงกำหนดแล้วผลเป็นยังไง / กลุ่มเล็กเกินไปยังสรุปไม่ได้)
+2. **เช็คการทดลองที่กำลังเดินอยู่** เรียก `mkt_outcome_list` ดูว่าใบประกาศไหนถึงกำหนดปิดหรือยัง ถ้ามีการทดลองตาม skill **ลองแล้วรู้ (test-and-learn)** ให้รายงานสถานะ (ยังไม่ถึงกำหนด / ถึงกำหนดแล้วผลเป็นยังไง / กลุ่มเล็กเกินไปยังสรุปไม่ได้) · ถึงกำหนดปิดจริง ชี้เจ้าของไปที่ skill **ลองแล้วรู้ (test-and-learn)** เพื่อปิดใบประกาศหรือประกาศเป้าใหม่ ตัว weekly-review เองไม่ปิด/ไม่ประกาศแทน
 3. **เทียบตามกฎด้านบน** ระบุแต่ละตัวว่าดีขึ้น/แย่ลง/เท่าเดิม/ข้อมูลน้อยเกินไป พร้อมตัวเลขคู่ (สัปดาห์นี้ vs สัปดาห์ก่อน)
 4. **บีบให้เหลือ 3 ประโยค** ตามรูปแบบผลลัพธ์ด้านล่างเท่านั้น ห้ามเกิน ห้ามขาด
 5. ถ้าจะเสนอสิ่งที่ต้องทำสัปดาห์หน้า และเป็นเรื่องที่ต้องแก้จุดรั่ว ให้ชี้ไปที่ skill **รอยรั่ว (leak)** เพื่อลงรายละเอียดต่อ ไม่ต้องอธิบายฟันเนลเต็มซ้ำในนี้

@@ -1,6 +1,6 @@
 ---
 name: who-first
-description: Use when the shop owner asks "who should we follow up with first", "which customer group matters", "ใครก่อน", or before sending any message to a customer segment. Groups contacts into 5 action-based piles using real RFM data (recency/frequency/spend from chat, not surveys), and picks one pile to act on this week.
+description: Use when the owner asks "who should we follow up with first", "which customer group matters", "ใครก่อน", or before messaging a segment. Groups contacts into 5 action piles using real RFM data (recency/frequency/spend), picks one pile to act on.
 ---
 
 # ใครก่อน (RFM จากการมีส่วนร่วมในแชท)

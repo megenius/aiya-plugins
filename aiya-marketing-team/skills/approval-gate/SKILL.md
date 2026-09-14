@@ -1,6 +1,6 @@
 ---
 name: approval-gate
-description: Use before ANY irreversible or customer-facing action (publish a real post, send a real reply, open/change a real ad, broadcast to a list) to check whether it needs an explicit human click first. Also use when the owner asks "อะไรที่ต้องให้ฉันกดเอง", "ทำไมยังไม่ส่ง", or seems surprised something didn't go out automatically. Not a skill that does anything by itself - it is the checklist every other skill/agent must pass before crossing from draft to real.
+description: Use before any irreversible/customer-facing action (publish, reply, change an ad, broadcast) to check if it needs a human click. Also when the owner asks "อะไรที่ต้องให้ฉันกดเอง" or is surprised something went out on its own. A checklist, not a doer.
 ---
 
 # ประตูอนุมัติ (approval-gate)

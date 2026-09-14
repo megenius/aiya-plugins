@@ -1,6 +1,6 @@
 ---
 name: test-and-learn
-description: Use when proposing any campaign, message, or promotion, or when the owner asks "how do we know if it worked", "ลองแล้วรู้". Turns every campaign into a single A/B experiment (one hypothesis, two variants differing in exactly one thing, a pre-chosen metric from the 3 the system can measure, and a decision rule) instead of a hopeful task list.
+description: Use when proposing a campaign, message, or promotion, or when the owner asks "how do we know if it worked", "ลองแล้วรู้". Turns a campaign into one A/B experiment: one hypothesis, two variants differing at one thing, a system metric, a decision rule.
 ---
 
 # ลองแล้วรู้ (ทดลองแล้วเรียนรู้)
@@ -15,12 +15,13 @@ description: Use when proposing any campaign, message, or promotion, or when the
 4. **วัดด้วยตัวชี้วัดที่ตั้งไว้ก่อนยิง** ห้ามเปลี่ยนตัวชี้วัดหลังเห็นผล
 5. **ขยายเมื่อชนะ ปิดเมื่อแพ้ ภายในกรอบเวลาที่ตั้งไว้** ไม่ใช่ปล่อยค้าง
 
-## ผูกกับใบประกาศผลลัพธ์ (mkt_outcome)
+## ผูกกับใบประกาศผลลัพธ์ (`mkt_outcome_list` / `mkt_outcome_choose` / `mkt_outcome_close`)
 
 - ตัวชี้วัดที่ประกาศได้มี 3 ตัวเท่านั้น: ข้อความที่ลูกค้าทักเข้ามา, ห้องแชทที่เปิดใหม่, ห้องที่ทักมาแล้วยังไม่ได้ตอบ
 - ความยาวประโยคใบประกาศ ไม่เกิน 400 ตัวอักษร กรอบเวลา 7 ถึง 90 วัน
 - ไม่มีใบประกาศ = วางแผนไม่ได้เลย ต้องประกาศก่อน
 - ระบบยังไม่มีตารางเก็บการทดลอง ไม่มีตัวแบ่งกลุ่ม ก/ข อัตโนมัติ ไม่มีตัวคำนวณนัยสำคัญทางสถิติ การทดลองวันนี้ทำได้ด้วยการส่งสองรอบแล้วนับเอง
+- ถ้าร้านต่อ connector `aiya-agents` ไว้: **ประกาศเป้าใหม่** ใช้ `mkt_outcome_choose` เลือกได้เฉพาะใบที่อยู่ในรายงานล่าสุดของ `mkt_listen_run` เท่านั้น (ส่งชื่อใบที่ไม่มี = ถูกปฏิเสธ) **ปิดใบที่เดินอยู่** ใช้ `mkt_outcome_close` เมื่อถึงกำหนดหรือเจ้าของเลิกไล่แล้ว (ไม่ลบแถวทิ้ง แค่เปลี่ยนสถานะออกจาก active) ทั้งสองตัวเป็น P2 ต้องให้เจ้าของสั่งเองเท่านั้น ห้ามกดแทน
 
 ## ขั้นตอน
 
@@ -39,6 +40,8 @@ description: Use when proposing any campaign, message, or promotion, or when the
    - ผลต่างน้อยกว่าหนึ่งในสี่ของค่าตั้งต้น ให้เขียนว่า "ต่างกันน้อย ยังไม่พอสรุป"
    - ชนะแล้วให้เสนอขยายเป็นขั้น ไม่ใช่ยิงทั้งฐานทันที
 
+4. **ก่อนส่งแบบ ก/ข จริง (ถ้าร้านต่อ connector `aiya-agents`)** เรียก `mkt_review_run` ตรวจร่างโพสต์ทั้งสองแบบ 3 ด่านจากข้อมูลจริงของร้าน: คำต้องห้ามในชุดแบรนด์ · ราคา/โปรที่อ้างต้องตรงกับสินค้าในระบบ · ต้องมีคำชวนที่พาไปสู่ใบประกาศผลลัพธ์ ไม่เรียกโมเดล ผ่านแล้วยังต้องรอเจ้าของกดส่งเองอยู่ดี ไม่มีอะไรถูกโพสต์ออกไปจากตัวนี้
+
 ## คำถามที่ถามเจ้าของร้าน (3 ข้อ)
 
 1. เดือนที่แล้วทำอะไรไปบ้าง แล้วรู้ได้ยังไงว่าอันไหนได้ผล
@@ -55,6 +58,7 @@ description: Use when proposing any campaign, message, or promotion, or when the
 - ห้ามเสนอการทดลองที่ต่างกันมากกว่าหนึ่งจุด
 - ห้ามอ้างว่าระบบมีการแบ่งกลุ่ม ก/ข อัตโนมัติ หรือมีการคำนวณนัยสำคัญทางสถิติ ระบบยังไม่มีทั้งสองอย่าง
 - ห้ามส่งข้อความเอง ร่างให้เจ้าของกดส่งเท่านั้น
+- `mkt_outcome_choose`/`mkt_outcome_close` เป็น P2 ห้ามกดแทนเจ้าของ แม้เจ้าของจะเร่ง
 
 ### เดวิลส์แอดโวเคตก่อนสรุป
 
@@ -70,5 +74,9 @@ description: Use when proposing any campaign, message, or promotion, or when the
 
 <!-- mcp-tools -->
 - `customer_segments`
+- `mkt_listen_run`
 - `mkt_outcome_list`
+- `mkt_outcome_choose`
+- `mkt_outcome_close`
+- `mkt_review_run`
 <!-- /mcp-tools -->

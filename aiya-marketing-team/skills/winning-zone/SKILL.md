@@ -1,6 +1,6 @@
 ---
 name: winning-zone
-description: Use when the shop owner asks "what should we talk about", "what is our selling point", "จุดเด็ดของร้านเราคืออะไร", or when planning which message to lead with this week. Sorts talking points into 4 zones (winning, risky, losing, dumb) using real chat-listen data, product list, and competitor notes, then narrows to 1-2 points worth saying.
+description: Use when the owner asks "what should we talk about", "what is our selling point", "จุดเด็ดของร้านเราคืออะไร", or when planning this week lead message. Sorts points into 4 zones (winning/risky/losing/dumb) from chat/product/competitor data, picks 1-2.
 ---
 
 # จุดเด็ด (winning zone)
@@ -20,6 +20,7 @@ description: Use when the shop owner asks "what should we talk about", "what is 
    - เรียก `mkt_listen_run` ดูว่า 7 วันล่าสุดลูกค้าถามเรื่องอะไรมากขึ้น เทียบสัปดาห์ก่อน
    - เรียก `product_list` ดูว่าร้านมีอะไรขายจริง
    - ถ้ามี `mkt_competitor_run` ให้เรียกดูบันทึกคู่แข่ง
+   - ถ้าร้านต่อ connector `aiya-agents` ไว้ เรียก `mkt_playbook_list` (platform ที่ร้านใช้จริง) ดูคู่มือแพลตฟอร์ม Meta/Instagram/TikTok ที่ยังไม่หมดอายุ เป็นความรู้ระดับแพลตฟอร์มที่ใช้ร่วมกันทุกร้าน ไม่ใช่ตัวเลขของร้านนี้ ห้ามอ้างข้อที่ `mkt_playbook_expire_check` บอกว่าหมดอายุแล้วเหมือนยังใช้ได้
    - ห้ามเริ่มเขียนก่อนได้ผลจากเครื่องมือ ผลว่างให้บอกว่าว่าง
 
 2. **ถามเจ้าของร้าน (ไม่เกิน 3 ข้อ แล้วรอคำตอบ)**
@@ -58,5 +59,7 @@ description: Use when the shop owner asks "what should we talk about", "what is 
 <!-- mcp-tools -->
 - `mkt_competitor_run`
 - `mkt_listen_run`
+- `mkt_playbook_list`
+- `mkt_playbook_expire_check`
 - `product_list`
 <!-- /mcp-tools -->

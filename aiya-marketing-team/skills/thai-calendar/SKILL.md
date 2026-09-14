@@ -1,6 +1,6 @@
 ---
 name: thai-calendar
-description: Use when planning content around Thai festivals/observances, when the owner asks "เดือนนี้มีวันอะไรบ้าง", "ก่อนเทศกาลนี้ต้องเตรียมอะไร", or before scheduling any post/campaign near a Thai holiday. Covers all 12 months of recurring Thai festivals and important days, flags which dates shift every year (lunar/Buddhist calendar), and gives a pre-publish checklist so content doesn't go out tone-deaf or too late.
+description: Use when planning content around Thai festivals, when the owner asks "เดือนนี้มีวันอะไรบ้าง", or before scheduling a post near a holiday. Covers 12 months of festivals, flags dates that shift yearly (lunar/Buddhist), a pre-publish checklist.
 ---
 
 # thai-calendar (ปฏิทินเทศกาลไทย)

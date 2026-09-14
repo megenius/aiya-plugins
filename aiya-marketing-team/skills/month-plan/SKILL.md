@@ -1,6 +1,6 @@
 ---
 name: month-plan
-description: Use when the owner wants a full month of marketing planned, asks "วางแผนเดือนนี้", "แผนเดือนหน้า", or gives a business goal ("อยากได้ลูกค้าใหม่เพิ่ม", "อยากขายของเก่าที่ค้างสต๊อก") and wants it turned into a plan. Chains business goal → one theme → a 4-week content calendar → channel choice → budget, using the other thinking-tool skills for every number in it.
+description: Use when the owner wants a full month planned, asks "วางแผนเดือนนี้", "แผนเดือนหน้า", or gives a goal ("อยากได้ลูกค้าใหม่เพิ่ม") to turn into a plan. Chains goal to one theme to a 4-week calendar to channel to budget, using the thinking-tool skills.
 ---
 
 # month-plan (เป้าธุรกิจ → แผนเดือน)
@@ -30,6 +30,10 @@ description: Use when the owner wants a full month of marketing planned, asks "�
 
 9. งานที่ต้องร่างโพสต์จริง ส่งต่อให้ skill **brand-content** และ agent `page-admin` ตัว month-plan เองไม่ร่างเนื้อหาเอง
 
+10. **แผนสัปดาห์อัตโนมัติของ 'แนน'** ถ้าร้านต่อ connector `aiya-agents` ไว้ ใช้ `mkt_plan_get` ดูว่าสัปดาห์นี้แนนวางแผนไว้แล้วหรือยัง (null = ยังไม่มี) ถ้ายังไม่มีและมีใบประกาศผลลัพธ์แล้ว ใช้ `mkt_plan_propose` ให้แนนวางแผนสัปดาห์ตอนนี้เลย แสดงร่างให้เจ้าของดูก่อนเสมอ แผนนี้แยกจากปฏิทิน 4 สัปดาห์ที่ month-plan สรุปไว้ในข้อ 7 (คนละชั้น: month-plan คิดภาพเดือน ส่วน `mkt_plan_*` คือแผนโพสต์ของสัปดาห์เดียวที่ระบบขับเคลื่อนต่อได้จริง) ต้องให้เจ้าของกด **อนุมัติเอง** ด้วย `mkt_plan_approve` เท่านั้น ห้ามกดแทน อนุมัติแล้วจะเกิดแคมเปญ + โพสต์ร่างในปฏิทิน ยังไม่มีอะไรขึ้นเพจ
+
+11. **หลังอนุมัติ ดูความคืบหน้าได้ (ไม่ต้องสั่งเอง)** `mkt_creative_run` โชว์ว่าโพสต์ไหนใน 24 ชั่วโมงข้างหน้ายังไม่มีภาพ (การสร้างจริงเกิดในรอบประจำวันของระบบ ไม่ใช่ตอนสั่งสด) · หลังตรวจผ่านแล้ว `mkt_handoff_run` ส่งร่างขึ้นปฏิทินของเพจจริงเป็น **ร่าง** เท่านั้น (ไม่ publish เอง) และ `mkt_queue_run` จัดคิวช่องเวลาให้จบที่ "รอเจ้าของกด" ไม่มีขั้นไหนโพสต์ขึ้นเพจ/LINE จริงสักชิ้น
+
 ## คำถามที่ถามเจ้าของร้าน (ไม่เกิน 3 ข้อ แล้วรอคำตอบ)
 
 1. เดือนนี้อยากได้ผลอะไรที่สุด (ลูกค้าใหม่ / ลูกค้าเก่ากลับมา / ขายของที่ค้างสต๊อก / อื่นๆ) เลือกได้ข้อเดียว
@@ -48,6 +52,7 @@ description: Use when the owner wants a full month of marketing planned, asks "�
 
 - วางแผนและเรียกเครื่องมือดูตัวเลข: P0/P1 ทำได้ทันที แสดงแผนให้ดูก่อนเสมอ
 - แผนทั้งเดือนต้องได้เจ้าของ **อนุมัติเป็นชุดก่อน** ถึงจะเริ่มร่างเนื้อหาจริงหรือดูตัวอย่างแคมเปญต่อ (ดู `approval-gate` - วางแผนเป็น P1 แต่ทุกอย่างที่ตามมาแยกระดับของตัวเอง)
+- `mkt_plan_approve` เป็น P2 เจ้าของต้องกดเองเท่านั้น (`mkt_plan_get`/`mkt_plan_propose`/`mkt_creative_run` เป็น P0/P1 ดูแผนหรือแสดงร่างได้ทันที)
 - โพสต์จริง ตอบลูกค้าจริง หรือใช้เงินโฆษณา **ไม่ทำที่นี่** ส่งต่อไปยัง skill ที่เกี่ยวแล้วผ่าน `approval-gate` ของมันเอง
 
 ## กฎก่อนสรุป (ห้ามฝ่าฝืน)
@@ -66,4 +71,10 @@ description: Use when the owner wants a full month of marketing planned, asks "�
 
 <!-- mcp-tools -->
 - `mkt_outcome_list`
+- `mkt_plan_get`
+- `mkt_plan_propose`
+- `mkt_plan_approve`
+- `mkt_creative_run`
+- `mkt_handoff_run`
+- `mkt_queue_run`
 <!-- /mcp-tools -->

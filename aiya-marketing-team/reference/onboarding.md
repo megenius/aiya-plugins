@@ -28,7 +28,7 @@ description: Step-by-step onboarding for connecting a Facebook page, LINE OA, an
 ## 0. ติดตั้งและล็อกอิน connector (ครั้งแรกเท่านั้น)
 
 1. ติดตั้งปลั๊กอิน `aiya-marketing-team` (ดูวิธีใน README)
-2. เปิด `/mcp` จะเห็น connector 5 ตัว: `aiya-page` `aiya-ads` `aiya-line` `aiya-sales` `aiya-events`
+2. เปิด `/mcp` จะเห็น connector 6 ตัว: `aiya-page` `aiya-ads` `aiya-line` `aiya-sales` `aiya-events` `aiya-agents`
 3. ทุกตัวเป็นแบบ HTTP + OAuth ถ้ายังไม่ล็อกอินจะขึ้น 401 ให้กด login ทีละตัวด้วยบัญชี AIYA ของร้าน
 4. สถานะ connected = ใช้ได้ ถ้าหมดอายุภายหลัง ให้ login ใหม่ด้วยขั้นตอนเดียวกัน
 

@@ -1,6 +1,6 @@
 ---
 name: safe-ads
-description: Use when the owner asks about running/boosting ads, "ยิงแอด", "เปิดแอด", "งบโฆษณา", or before proposing any paid campaign. Walks prepare-then-confirm-then-execute for ad spend, states plainly that campaigns always start PAUSED under a hard budget ceiling, and is honest that today's chat tools can only preview - real execution still needs the owner at the ads desk (/ads).
+description: Use when the owner asks about running/boosting ads, "ยิงแอด", "เปิดแอด", "งบโฆษณา", or before proposing paid spend. Walks prepare-confirm-execute, states campaigns always start PAUSED under a budget cap, honest real execution needs the owner at /ads.
 ---
 
 # safe-ads (โฆษณาแบบปลอดภัย)
