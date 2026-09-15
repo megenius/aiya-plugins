@@ -1,0 +1,10 @@
+{
+  "name": "aiya-test-agents",
+  "displayName": "AIYA Test Agents",
+  "version": "0.1.0-alpha",
+  "description": "ปลั๊กอินทดสอบว่าหน้า Plugins ของ Claude แสดงแท็บ Agents ได้ไหมเมื่อมีแค่ agents กับ skills",
+  "author": {
+    "name": "AIYA"
+  },
+  "agents": ["./agents/tester.md"]
+}

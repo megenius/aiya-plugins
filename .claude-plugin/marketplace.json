@@ -26,6 +26,11 @@
       "name": "aiya-chat-team",
       "source": "./aiya-chat-team",
       "description": "ทีมตอบแชท AI 3 ตำแหน่ง (เนย หัวหน้าดูภาพรวม · ปิง ตอบชั่วโมงแรก · หยก ติดตามห้องใกล้หลุดกรอบ) ร่างตอบให้ทุกครั้ง ไม่ส่งข้อความหาลูกค้าจริงเอง"
+    },
+    {
+      "name": "aiya-test-agents",
+      "source": "./aiya-test-agents",
+      "description": "ปลั๊กอินทดสอบว่าหน้า Plugins ของ Claude แสดงแท็บ Agents ได้ไหมเมื่อมีแค่ agents กับ skills ไม่มีหน้าที่ทางธุรกิจจริง"
     }
   ]
 }
