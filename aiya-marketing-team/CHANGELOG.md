@@ -1,7 +1,10 @@
 # CHANGELOG - aiya-marketing-team
 
-## Unreleased
+## 1.0.1-alpha (2026-09-15)
 
+- bump เวอร์ชันเป็น 1.0.1-alpha ตามคำสั่งของ Boy หลังพบว่าแท็บ Agents บน Claude Cowork โผล่แว่บแล้วหาย
+  แม้ `plugin.json` จะประกาศ `agents` เป็น array ไฟล์แล้วก็ตาม (#2784) ใช้บังคับให้ Cowork รีเฟรช
+  cache ของปลั๊กอินจริงอีกรอบ
 - 6 skill ความรู้ LINE Ads (`line-ads-basics` `line-ads-targeting` `line-ads-kpi-benchmark`
   `line-ads-creative-specs` `line-ads-bidding-budget` `line-ads-campaign-workflow`) ดูดจาก
   knowledge/workflows ของ line-ads-mcp (Apache-2.0) เฟส 1 ตาม `positions/PROPOSAL-line-ads-mcp-20260915.md`
