@@ -1,7 +1,8 @@
 {
   "name": "aiya-marketing-team",
-  "description": "Marketing team plugin for AIYA shop owners: a 14 position team (mkt_head, mkt_research, mkt_competitor, mkt_ads, mkt_content, mkt_creative, mkt_reviewer, mkt_scheduler, mkt_report, mkt_segments, mkt_closer, mkt_engagement, mkt_funnel, mkt_brand) matching the AIYA marketing team itself, an 18-skill playbook (winning zone, who first, leak, test and learn, month plan, brand content, safe ads, weekly review, approval gate, Thai calendar, agent prompt, no order data, real metrics, pick one, plus live Meta/Instagram/TikTok/cross-platform playbooks read fresh from the shared platform guide), slash commands for ads, approvals, audience RFM, calendar, experiments, and reviews, page/LINE/ads/sales/events MCP connectors plus the aiya-agents connector for the weekly plan-creative-review-queue pipeline, and draft-first workflows that never publish without owner approval",
-  "version": "1.0.2-alpha",
+  "displayName": "AIYA Marketing AI",
+  "description": "ทีมการตลาด AI 17 คนในเครื่องคุณ พร้อมทำงานทันทีที่ติดตั้ง หัวหน้าทีมรับเป้าหนึ่งบรรทัดแล้วแตกเป็นแผนสัปดาห์ นักเขียนร่างโพสต์ 3 โทน ครีเอทีฟทำภาพตามแบรนด์ คนตรวจกันราคาผิดและข้อมูลมั่วก่อนถึงมือคุณ คนคิวจองเวลาลงปฏิทิน คนรายงานสรุปผลเป็นภาษาคน ต่อตรงกับเพจ Facebook LINE OA โฆษณา และแชทลูกค้าจริงผ่าน AIYA MCP ทุกชิ้นงานรอคุณกดอนุมัติ ไม่มีอะไรหลุดไปหาลูกค้าเอง 37 skill · 10 คำสั่ง · เริ่มฟรีที่ agents.aiya.me",
+  "version": "1.0.3-alpha",
   "author": {
     "name": "AIYA"
   },

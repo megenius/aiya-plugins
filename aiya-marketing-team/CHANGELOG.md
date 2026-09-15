@@ -1,5 +1,11 @@
 # CHANGELOG - aiya-marketing-team
 
+## 1.0.3-alpha (2026-09-15)
+
+- bump เวอร์ชันเป็น 1.0.3-alpha (Boy สั่ง) รวมการแก้ connector `aiya-agents` ให้ชี้ `https://agents.aiya.me/mcp` (#2808) เข้ากับรอบ publish นี้ ป้องกัน cache เก่าของ Cowork/Claude Code ที่ผูกกับเลขเวอร์ชันเดิม
+
+- เปลี่ยนชื่อแสดงเป็น "AIYA Marketing AI" (`displayName`) และเขียน description ใหม่ให้อ่านง่าย บอกว่ามีอะไรบ้าง (17 คน, 37 skill, 10 คำสั่ง) โดยไม่มีคำสัญญาเกินจริง (Boy ขอสำหรับโพสต์ประชาสัมพันธ์)
+
 ## 1.0.1-alpha (2026-09-15)
 
 - bump เวอร์ชันเป็น 1.0.1-alpha ตามคำสั่งของ Boy หลังพบว่าแท็บ Agents บน Claude Cowork โผล่แว่บแล้วหาย

@@ -1,7 +1,7 @@
 {
   "name": "aiya-ads-team",
   "description": "Ads team plugin for AIYA shop owners: 3 positions (Bow reports yesterday's results daily, Mai reallocates budget across adsets every Monday, Je designs A/B tests every Thursday) that only ever propose, never spend money or go live without the owner clicking approve at /ads",
-  "version": "1.0.2-alpha",
+  "version": "1.0.3-alpha",
   "author": {
     "name": "AIYA"
   },
