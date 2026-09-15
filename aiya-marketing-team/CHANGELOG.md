@@ -1,5 +1,14 @@
 # CHANGELOG - aiya-marketing-team
 
+## Unreleased
+
+- 6 skill ความรู้ LINE Ads (`line-ads-basics` `line-ads-targeting` `line-ads-kpi-benchmark`
+  `line-ads-creative-specs` `line-ads-bidding-budget` `line-ads-campaign-workflow`) ดูดจาก
+  knowledge/workflows ของ line-ads-mcp (Apache-2.0) เฟส 1 ตาม `positions/PROPOSAL-line-ads-mcp-20260915.md`
+  ยังเป็นความรู้/เช็กลิสต์เท่านั้น ระบบยังไม่มีเครื่องมือยิงโฆษณา LINE จริง แบ่งส่งเป็น 2 PR
+  (ใบ A #2771: basics/targeting/kpi-benchmark + NOTICE · ใบ B: creative-specs/bidding-budget/campaign-workflow)
+  (Closes #2728)
+
 ## 1.0.0-alpha (2026-09-15)
 
 - bump เวอร์ชันเป็น 1.0.0-alpha ตามคำสั่งเปิดตัวปลั๊กอินทีมทุกแผนกบน marketplace (Partial #2753)

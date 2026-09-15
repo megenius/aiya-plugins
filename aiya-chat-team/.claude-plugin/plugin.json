@@ -4,5 +4,10 @@
   "version": "1.0.0-alpha",
   "author": {
     "name": "AIYA"
-  }
+  },
+  "agents": [
+    "./agents/chat_followup.md",
+    "./agents/chat_head.md",
+    "./agents/chat_responder.md"
+  ]
 }

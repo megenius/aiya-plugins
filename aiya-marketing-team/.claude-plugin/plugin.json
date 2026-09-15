@@ -4,5 +4,24 @@
   "version": "1.0.0-alpha",
   "author": {
     "name": "AIYA"
-  }
+  },
+  "agents": [
+    "./agents/mkt_brand.md",
+    "./agents/mkt_broadcast.md",
+    "./agents/mkt_closer.md",
+    "./agents/mkt_competitor.md",
+    "./agents/mkt_content.md",
+    "./agents/mkt_creative.md",
+    "./agents/mkt_engagement.md",
+    "./agents/mkt_funnel.md",
+    "./agents/mkt_head.md",
+    "./agents/mkt_influencer.md",
+    "./agents/mkt_report.md",
+    "./agents/mkt_research.md",
+    "./agents/mkt_reviewer.md",
+    "./agents/mkt_scheduler.md",
+    "./agents/mkt_segments.md",
+    "./agents/mkt_trend.md",
+    "./agents/mkt_video_script.md"
+  ]
 }

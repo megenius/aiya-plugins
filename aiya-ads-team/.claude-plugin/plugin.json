@@ -4,5 +4,10 @@
   "version": "1.0.0-alpha",
   "author": {
     "name": "AIYA"
-  }
+  },
+  "agents": [
+    "./agents/ads_abtest.md",
+    "./agents/ads_budget.md",
+    "./agents/ads_lead.md"
+  ]
 }

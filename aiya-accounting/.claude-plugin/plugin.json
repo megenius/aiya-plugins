@@ -9,7 +9,21 @@
   },
   "homepage": "https://aiya.ai",
   "license": "UNLICENSED",
-  "keywords": ["accounting", "thai", "mcp", "aiya"],
+  "keywords": [
+    "accounting",
+    "thai",
+    "mcp",
+    "aiya"
+  ],
   "skills": "./skills",
-  "commands": "./commands"
+  "commands": "./commands",
+  "agents": [
+    "./agents/acct-ap-clerk.md",
+    "./agents/acct-ar-clerk.md",
+    "./agents/acct-board-clerk.md",
+    "./agents/acct-controller-review.md",
+    "./agents/acct-doc-reader.md",
+    "./agents/acct-lead.md",
+    "./agents/acct-recon.md"
+  ]
 }
