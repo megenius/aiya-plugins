@@ -1,7 +1,7 @@
 {
   "aiya-agents": {
     "type": "http",
-    "url": "https://mcp.aiya.me/mcp"
+    "url": "https://agents.aiya.me/mcp"
   },
   "aiya-page": {
     "type": "http",
