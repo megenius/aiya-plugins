@@ -1,5 +1,9 @@
 # CHANGELOG - aiya-accounting
 
+## 1.0.4-alpha (2026-09-20)
+
+- ย้าย connector `aiya-agents` กลับไปชี้ `https://mcp.aiya.me/mcp` (#2807 ขั้นสุดท้าย) หลัง v2#922 และ #2977 ขึ้น prod แล้ว (discovery ของ mcp.aiya.me ไม่กำกวมอีก) bump เวอร์ชันตาม
+
 ## 1.0.3-alpha (2026-09-15)
 
 - bump เวอร์ชันเป็น 1.0.3-alpha (Boy สั่ง) รวมการแก้ connector `aiya-agents` ให้ชี้ `https://agents.aiya.me/mcp` (#2808) เข้ากับรอบ publish นี้ ป้องกัน cache เก่าของ Cowork/Claude Code ที่ผูกกับเลขเวอร์ชันเดิม
