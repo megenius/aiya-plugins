@@ -1,0 +1,25 @@
+{
+  "name": "water-watch",
+  "displayName": "น้ำ.aiya.ai — ดูระดับน้ำใกล้บ้าน",
+  "version": "1.0.0-alpha",
+  "description": "คู่มือกำกับการตอบคำถามน้ำท่วม/ระดับน้ำจากข้อมูลที่วัดได้จริงเท่านั้น ผ่าน MCP สาธารณะ น้ำ.aiya.ai (thaiwater/สสน., คลอง กทม./สนน., Traffy Fondue) — ห้ามพยากรณ์ ห้ามตัดสินใจแทนผู้ใช้",
+  "author": {
+    "name": "AIYA",
+    "url": "https://aiya.ai"
+  },
+  "homepage": "https://xn--q3c4c8cq.aiya.ai",
+  "license": "UNLICENSED",
+  "keywords": [
+    "flood",
+    "water-level",
+    "thai",
+    "mcp",
+    "aiya",
+    "น้ำท่วม"
+  ],
+  "skills": "./skills",
+  "commands": "./commands",
+  "agents": [
+    "./agents/flood-analyst.md"
+  ]
+}

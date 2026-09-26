@@ -32,6 +32,11 @@
       "name": "aiya-test-agents",
       "source": "./aiya-test-agents",
       "description": "ปลั๊กอินทดสอบว่าหน้า Plugins ของ Claude แสดงแท็บ Agents ได้ไหมเมื่อมีแค่ agents กับ skills ไม่มีหน้าที่ทางธุรกิจจริง"
+    },
+    {
+      "name": "water-watch",
+      "source": "./water-watch",
+      "description": "ข้อมูลระดับน้ำ/น้ำท่วมที่วัดได้จริงจาก น้ำ.aiya.ai ผ่าน MCP (thaiwater 805 สถานี · คลอง กทม. 312 จุด · ฝน · รายงาน Traffy) พร้อมสกิลตอบคำถามน้ำท่วมอย่างปลอดภัย รายงานสถานการณ์ และผู้ช่วย flood-analyst — ไม่พยากรณ์ ไม่ตัดสินแทน อ้างเวลาที่วัดทุกตัวเลข"
     }
   ]
 }
