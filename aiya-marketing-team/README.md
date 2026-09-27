@@ -16,7 +16,7 @@
 | `aiya-line` | `https://mcp.aiya.me/line` | ผู้ติดตามและข้อความ LINE OA |
 | `aiya-sales` | `https://mcp.aiya.me/sales` | ข้อมูลทีมขาย/ออเดอร์ |
 | `aiya-events` | `https://mcp.aiya.me/events` | ปฏิทินอีเวนต์/กิจกรรมร้าน |
-| `aiya-agents` | `https://mcp.aiya.me/mcp` | ท่อวางแผน-สร้างภาพ-ตรวจ-จัดคิวรายสัปดาห์ (`mkt_*`) และคู่มือแพลตฟอร์ม |
+| `aiya-agents` | `https://agents.aiya.me/mcp` | ท่อวางแผน-สร้างภาพ-ตรวจ-จัดคิวรายสัปดาห์ (`mkt_*`) และคู่มือแพลตฟอร์ม |
 
 ทุกตัวเป็น HTTP + OAuth (ยังไม่ล็อกอินจะได้ 401) วิธีล็อกอินอยู่ใน `reference/onboarding.md`
 

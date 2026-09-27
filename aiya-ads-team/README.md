@@ -9,7 +9,7 @@
 
 | ชื่อ | URL | ใช้ทำอะไร |
 |---|---|---|
-| `aiya-agents` | `https://mcp.aiya.me/mcp` | อ่านแผนสัปดาห์ที่อนุมัติแล้วและผลลัพธ์จริงผ่าน `mkt_plan_get` / `mkt_outcome_list` / ดูตัวอย่างแคมเปญผ่าน `mkt_ads_preview_run` |
+| `aiya-agents` | `https://agents.aiya.me/mcp` | อ่านแผนสัปดาห์ที่อนุมัติแล้วและผลลัพธ์จริงผ่าน `mkt_plan_get` / `mkt_outcome_list` / ดูตัวอย่างแคมเปญผ่าน `mkt_ads_preview_run` |
 
 เป็น HTTP + OAuth ยังไม่ล็อกอินจะได้ 401 ล็อกอินผ่าน `/mcp` ใน Claude Code
 
