@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTM One-Pager · MeetBrief</title>
+<style>
+  :root {
+    --ink: #1c1f24;
+    --muted: #5b6270;
+    --line: #dfe3e8;
+    --accent: #1f5eff;
+    --accent-soft: #eef3ff;
+    --empty: #b54708;
+    --empty-bg: #fff4e5;
+    --guess: #7a5af8;
+    --paper: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  @page { size: A4; margin: 10mm; }
+  html, body { margin: 0; padding: 0; background: #f2f4f7; }
+  body {
+    font-family: "Noto Sans Thai", "Sarabun", "IBM Plex Sans Thai", "Leelawadee UI", "Thonburi", "Tahoma", sans-serif;
+    color: var(--ink);
+    font-size: 9.5pt;
+    line-height: 1.45;
+  }
+  .page {
+    width: 210mm; min-height: 297mm; margin: 12px auto; padding: 10mm;
+    background: var(--paper); box-shadow: 0 1px 6px rgba(0,0,0,.08);
+  }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 6px; margin-bottom: 8px; }
+  .kicker { font-size: 8pt; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+  h1 { font-size: 18pt; margin: 2px 0 2px; line-height: 1.2; }
+  .oneliner { font-size: 10.5pt; margin: 0; }
+  .meta { font-size: 8pt; color: var(--muted); margin-top: 3px; }
+  .positioning {
+    background: var(--accent-soft); border-left: 4px solid var(--accent);
+    padding: 6px 10px; margin-bottom: 8px; font-size: 10pt;
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .card { border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; break-inside: avoid; }
+  .card.wide { grid-column: 1 / -1; }
+  .card h2 {
+    font-size: 8.5pt; margin: 0 0 3px; color: var(--accent);
+    text-transform: uppercase; letter-spacing: .05em;
+  }
+  .card p { margin: 0 0 2px; }
+  .card ul, .card ol { margin: 0; padding-left: 16px; }
+  .card li { margin: 0; }
+  .empty {
+    display: inline-block; background: var(--empty-bg); color: var(--empty);
+    border: 1px dashed var(--empty); border-radius: 4px; padding: 0 6px; font-weight: 700; font-size: 8.5pt;
+  }
+  .hint { color: var(--muted); font-size: 8pt; margin-top: 2px; }
+  .guess { color: var(--guess); font-weight: 600; font-size: 8pt; }
+  .price { color: var(--empty); font-weight: 700; }
+  table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+  th, td { border-bottom: 1px solid var(--line); text-align: left; padding: 3px 4px; vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 8pt; }
+  footer { margin-top: 8px; font-size: 7.5pt; color: var(--muted); display: flex; justify-content: space-between; gap: 8px; }
+  @media print {
+    html, body { background: #fff; }
+    .page { margin: 0; padding: 0; width: auto; min-height: auto; box-shadow: none; }
+  }
+  @media (max-width: 700px) {
+    .page { width: auto; margin: 0; padding: 16px; min-height: auto; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div class="kicker">GTM One-Pager</div>
+    <h1>MeetBrief</h1>
+    <p class="oneliner">AI ฟังประชุมขายแล้วสรุปเป็นโน้ตดีลกับงานที่ต้องตามต่อ ภายในไม่กี่นาทีหลังวางสาย</p>
+    <div class="meta">สถานะ: มี prototype ยังไม่มีผู้ใช้จ่ายเงิน · อัปเดต 30 ก.ย. 2569</div>
+  </header>
+
+  <section class="positioning"><strong>Positioning:</strong> สำหรับทีมขาย B2B ที่ต้องจดโน้ตเองหลังประชุมลูกค้า MeetBrief คือผู้ช่วยสรุปประชุมที่ให้โน้ตดีลกับงานถัดไปพร้อมใช้ ต่างจากการจดมือหรือถอดเสียงทั้งไฟล์ ตรงที่ [จุดต่างที่ยังต้องยืนยันกับลูกค้า]</section>
+
+  <div class="grid">
+    <section class="card"><h2>ICP</h2><ul><li>หัวหน้าทีมขาย B2B ในบริษัทไทยขนาดกลาง ทีมขายไม่กี่คน</li><li>ประชุมลูกค้าผ่าน Google Meet / Zoom · บันทึกดีลใน Google Sheets</li><li>งานที่อยากให้สำเร็จ: รู้สถานะดีลทุกตัวโดยไม่ต้องไล่ถามลูกทีม</li></ul></section>
+    <section class="card"><h2>Value Prop</h2><p><strong>Pain:</strong> เซลส์ไม่จดโน้ต ตามงานหลุด หัวหน้าไม่เห็นภาพดีล</p><p><strong>Gain:</strong> ได้โน้ตดีล + งานที่ต้องทำต่อ ส่งเข้าที่เดียวทุกครั้งหลังประชุม</p></section>
+    <section class="card"><h2>Growth Loop</h2><p><strong>Share/Deploy Loop</strong> (สไลด์หน้า 45): เซลส์แชร์สรุปให้ลูกค้า → ลูกค้าเห็นชื่อ MeetBrief ท้ายสรุป → ทีมขายฝั่งลูกค้าลองใช้</p><p>นาทีแรกที่เห็นค่า: อัปโหลดคลิปประชุม 1 ไฟล์ แล้วได้สรุปดีลทันที</p></section>
+    <section class="card"><h2>Magnet: Free Tool</h2><span class="empty">ยังว่าง</span><p class="hint">เติมด้วย skill free-tool</p></section>
+    <section class="card"><h2>Content</h2><ul><li>ธีมหลัก: "หลังประชุมขาย ต้องจดอะไรบ้าง" (Awareness) → "เทียบวิธีจดโน้ตดีล 3 แบบ" (Consideration)</li><li>ปฏิทิน 14 วัน: ร่างแล้วใน my-product.md · คลิปสั้น 1 ชิ้น: "สรุปประชุมขายใน 1 นาที"</li></ul></section>
+    <section class="card"><h2>Paid</h2><ul><li>แอด A/B ต่างกันที่ Hook เท่านั้น · เริ่ม LinkedIn (Role ชัด)</li><li>ตัดออก: คนหา "แอปอัดเสียงฟรี", นักเรียน/นักศึกษา <span class="guess">[เดา]</span></li><li>Stop rule: ครบ [ใส่งบทดลองเอง] หรือ [ใส่จำนวนวัน] วัน แล้ว Lead ผ่านคำถามคัดไม่ถึง [ใส่จำนวน]</li></ul></section>
+    <section class="card wide"><h2>Sales Motion</h2><ul><li>คัด Lead 5 ข้อ: Pain การจดโน้ต · ใครตัดสินใจ · เครื่องมือประชุมที่ใช้ · ทำไมต้องตอนนี้ · วิธีซื้อซอฟต์แวร์</li><li>Objection หลัก: ความเสี่ยงข้อมูลเสียงลูกค้า → หลักฐาน: เอกสารนโยบายข้อมูล (ยังต้องเขียน)</li><li>Demo 5 ช็อต: ปัญหา → อัปโหลดคลิปจริงแล้วได้สรุป → หลักฐาน → ส่งต่อราคา → นัดทดลองกับประชุมจริง</li></ul></section>
+    <section class="card wide"><h2>Pricing Table</h2>
+      <table>
+        <thead><tr><th>Tier</th><th>เหมาะกับใคร</th><th>ต่างกันที่</th><th>ราคา</th></tr></thead>
+        <tbody>
+          <tr><td>Solo <span class="guess">[เดา]</span></td><td>เซลส์คนเดียวอยากลองก่อน</td><td>สรุปของตัวเอง ไม่มีหน้ารวมทีม</td><td><span class="price">[ใส่ราคา]</span></td></tr>
+          <tr><td>Team <span class="guess">[เดา]</span></td><td>หัวหน้าทีมขาย</td><td>หน้ารวมดีลทั้งทีม + ส่งงานต่อให้ลูกทีม</td><td><span class="price">[ใส่ราคา]</span></td></tr>
+          <tr><td>Business <span class="guess">[เดา]</span></td><td>บริษัทที่ต้องคุมข้อมูลเข้ม</td><td>ตั้งนโยบายเก็บ/ลบข้อมูล · เชื่อม CRM</td><td><span class="price">[ใส่ราคา]</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="card wide"><h2>7 วันถัดไป</h2><span class="empty">ยังว่าง</span><p class="hint">ทำต่อด้วย skill action-plan-7d แล้วเรียก gtm-one-pager อีกรอบ</p></section>
+  </div>
+
+  <footer>
+    <span>ร่างโดย AI · คนตัดสิน · ตัวเลขทุกตัวต้องมีที่มา · <span class="guess">[เดา]</span> = AI คาดเอง ต้องตรวจ</span>
+    <span>จากคลาส Vibe Marketing for Vibe Coding · AIYA</span>
+  </footer>
+</main>
+</body>
+</html>

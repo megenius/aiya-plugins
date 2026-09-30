@@ -32,6 +32,11 @@
       "name": "aiya-test-agents",
       "source": "./aiya-test-agents",
       "description": "ปลั๊กอินทดสอบว่าหน้า Plugins ของ Claude แสดงแท็บ Agents ได้ไหมเมื่อมีแค่ agents กับ skills ไม่มีหน้าที่ทางธุรกิจจริง"
+    },
+    {
+      "name": "aiya-gtm-team",
+      "source": "./aiya-gtm-team",
+      "description": "ทีม GTM AI สำหรับ Product ที่ build ด้วย AI: 13 skill (ตั้งต้น, PLG loop, free tool, content matrix, บรีฟแอด, sales playbook, GTM one-pager, แผน 7 วัน, positioning 22 laws, BANK code, ซ้อมขาย, JTBD working backwards, SEO/AEO/GEO) และ 4 agent (หัวหน้าทีม, ผู้ตรวจ, นักทดสอบ free tool, ผู้เตรียมคุยลูกค้า) ร่างให้ทุกอย่าง ไม่แต่งตัวเลข ไม่ยิงแอด ไม่โพสต์เอง · จากคลาส Vibe Marketing for Vibe Coding"
     }
   ]
 }

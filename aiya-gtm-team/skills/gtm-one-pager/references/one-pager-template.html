@@ -1,0 +1,118 @@
+<!doctype html>
+<!--
+  แม่แบบ GTM One-Pager (skill gtm-one-pager)
+  วิธีใช้:
+  - แทน {{...}} ด้วยข้อความจาก my-product.md (ย่อ ช่องละ 2-4 บรรทัด ใช้ <ul><li> ได้)
+  - ช่องที่ว่าง: ลบเนื้อหาในกล่อง แล้วใส่ <span class="empty">ยังว่าง</span><p class="hint">เติมด้วย skill ...</p>
+  - คำที่ AI เดา: ห่อด้วย <span class="guess">[เดา]</span>
+  - ช่องราคา: <span class="price">[ใส่ราคา]</span> เสมอ เว้นแต่ผู้เรียนให้ราคามาเอง
+  - escape อักขระ < > & ในข้อความผู้เรียนก่อนใส่
+  - ไฟล์เดียว ไม่มี script ไม่มีลิงก์ภายนอก ต้องพอดี A4 1 หน้า
+-->
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTM One-Pager · {{ชื่อ Product}}</title>
+<style>
+  :root {
+    --ink: #1c1f24;
+    --muted: #5b6270;
+    --line: #dfe3e8;
+    --accent: #1f5eff;
+    --accent-soft: #eef3ff;
+    --empty: #b54708;
+    --empty-bg: #fff4e5;
+    --guess: #7a5af8;
+    --paper: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  @page { size: A4; margin: 10mm; }
+  html, body { margin: 0; padding: 0; background: #f2f4f7; }
+  body {
+    font-family: "Noto Sans Thai", "Sarabun", "IBM Plex Sans Thai", "Leelawadee UI", "Thonburi", "Tahoma", sans-serif;
+    color: var(--ink);
+    font-size: 9.5pt;
+    line-height: 1.45;
+  }
+  .page {
+    width: 210mm; min-height: 297mm; margin: 12px auto; padding: 10mm;
+    background: var(--paper); box-shadow: 0 1px 6px rgba(0,0,0,.08);
+  }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 6px; margin-bottom: 8px; }
+  .kicker { font-size: 8pt; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+  h1 { font-size: 18pt; margin: 2px 0 2px; line-height: 1.2; }
+  .oneliner { font-size: 10.5pt; margin: 0; }
+  .meta { font-size: 8pt; color: var(--muted); margin-top: 3px; }
+  .positioning {
+    background: var(--accent-soft); border-left: 4px solid var(--accent);
+    padding: 6px 10px; margin-bottom: 8px; font-size: 10pt;
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .card { border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; break-inside: avoid; }
+  .card.wide { grid-column: 1 / -1; }
+  .card h2 {
+    font-size: 8.5pt; margin: 0 0 3px; color: var(--accent);
+    text-transform: uppercase; letter-spacing: .05em;
+  }
+  .card p { margin: 0 0 2px; }
+  .card ul, .card ol { margin: 0; padding-left: 16px; }
+  .card li { margin: 0; }
+  .empty {
+    display: inline-block; background: var(--empty-bg); color: var(--empty);
+    border: 1px dashed var(--empty); border-radius: 4px; padding: 0 6px; font-weight: 700; font-size: 8.5pt;
+  }
+  .hint { color: var(--muted); font-size: 8pt; margin-top: 2px; }
+  .guess { color: var(--guess); font-weight: 600; font-size: 8pt; }
+  .price { color: var(--empty); font-weight: 700; }
+  table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+  th, td { border-bottom: 1px solid var(--line); text-align: left; padding: 3px 4px; vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 8pt; }
+  footer { margin-top: 8px; font-size: 7.5pt; color: var(--muted); display: flex; justify-content: space-between; gap: 8px; }
+  @media print {
+    html, body { background: #fff; }
+    .page { margin: 0; padding: 0; width: auto; min-height: auto; box-shadow: none; }
+  }
+  @media (max-width: 700px) {
+    .page { width: auto; margin: 0; padding: 16px; min-height: auto; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div class="kicker">GTM One-Pager</div>
+    <h1>{{ชื่อ Product}}</h1>
+    <p class="oneliner">{{ทำอะไร 1 ประโยค}}</p>
+    <div class="meta">สถานะ: {{สถานะ Product}} · อัปเดต {{วันที่}}</div>
+  </header>
+
+  <section class="positioning"><strong>Positioning:</strong> {{Positioning 1 ประโยค}}</section>
+
+  <div class="grid">
+    <section class="card"><h2>ICP</h2>{{ICP}}</section>
+    <section class="card"><h2>Value Prop</h2>{{Pain → Gain}}</section>
+    <section class="card"><h2>Growth Loop</h2>{{ส่วน 2}}</section>
+    <section class="card"><h2>Magnet: Free Tool</h2>{{ส่วน 3}}</section>
+    <section class="card"><h2>Content</h2>{{ส่วน 4}}</section>
+    <section class="card"><h2>Paid</h2>{{ส่วน 5}}</section>
+    <section class="card wide"><h2>Sales Motion</h2>{{ส่วน 6}}</section>
+    <section class="card wide"><h2>Pricing Table</h2>
+      <table>
+        <thead><tr><th>Tier</th><th>เหมาะกับใคร</th><th>ต่างกันที่</th><th>ราคา</th></tr></thead>
+        <tbody>
+          <tr><td>{{Tier}}</td><td>{{ใคร}}</td><td>{{ต่างกันที่}}</td><td><span class="price">[ใส่ราคา]</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="card wide"><h2>7 วันถัดไป</h2>{{ส่วน 8}}</section>
+  </div>
+
+  <footer>
+    <span>ร่างโดย AI · คนตัดสิน · ตัวเลขทุกตัวต้องมีที่มา · <span class="guess">[เดา]</span> = AI คาดเอง ต้องตรวจ</span>
+    <span>จากคลาส Vibe Marketing for Vibe Coding · AIYA</span>
+  </footer>
+</main>
+</body>
+</html>

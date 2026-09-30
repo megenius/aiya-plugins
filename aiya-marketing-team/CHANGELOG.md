@@ -1,5 +1,11 @@
 # CHANGELOG - aiya-marketing-team
 
+## Unreleased (MKT-04, 2026-09-28) · ยังไม่ publish (freeze 29 ก.ย. 18:00 ถึง 30 ก.ย. 17:00 · publish เป็นงานห้อง dev หลัง freeze)
+
+- ถอด skill `page-reply` ออกจากปลั๊กอิน ตกลงร่วมกับห้องแอดมินตอบแชท (platform-v3-70) ว่าตอบคอมเมนต์/แชทลูกค้ารายคนเป็นงานแอดมินตอบแชท ไม่ใช่การตลาด (`PLAN.md` ข้อ ช) `page_conversation_reply` ไม่ได้อยู่ในชุดเครื่องมือของทีมนี้อีกแล้ว
+- เจน (`mkt_closer`) เหลือวัดผลอย่างเดียว (นับห้องค้าง/ถามราคาแล้วเงียบ) เลิกร่างข้อความติดตามถึงลูกค้า
+- แก้ description ใน `plugin.json` (ตัด "แชทลูกค้าจริง" ตัวเลข skill 37 -> 36) และตาราง `mkt_head.md`
+
 ## 1.0.5-alpha (2026-09-27)
 
 - ย้าย connector `aiya-agents` กลับไปชี้ `https://agents.aiya.me/mcp` (#2807) เอนทรี 1.0.4-alpha ด้านล่างที่บอกว่าย้ายกลับ `mcp.aiya.me/mcp` แล้ว **เขียนเร็วเกินไป** v2#922 และ #2977 (เงื่อนไขที่ต้องขึ้น prod ก่อน) ยังไม่ได้ deploy จริง discovery ของ mcp.aiya.me ยังชี้ authorization server ผิดตัวให้ connector นี้อยู่ ใช้ `agents.aiya.me/mcp` แทนจนกว่าทั้งสองใบนั้นขึ้น prod แล้วพิสูจน์ discovery ตรงกัน
