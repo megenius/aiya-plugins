@@ -9,8 +9,7 @@ description: >-
 
 # ขึ้นทะเบียนวางบิลกิจการลูกค้า
 
-อ้างอิง [PLAN-ACCT-VENDOR.md](../../../../PLAN-ACCT-VENDOR.md) §1 §5 และ
-[references/acct-team-rules.md](../../references/acct-team-rules.md)
+อ้างอิง [references/acct-team-rules.md](../../references/acct-team-rules.md)
 
 ## ขั้นตอน
 
