@@ -39,9 +39,24 @@ description: >-
 - ยอดเงินเป็น **สตางค์**
 - ผลที่ยังตอบไม่ได้ **ห้ามกลบด้วยการเดา**
 
+## เครื่องมือเสริมของงานเทียบกับ PEAK
+
+- `acct_ledger_compare` เทียบบิลค่าใช้จ่ายในสมุดบัญชีข้างนอก (`provider`: `peak` หรือ `flowaccount` ค่าเริ่มต้น `peak`) กับใบตั้งเบิกของเรา
+  อ่านอย่างเดียวทั้งเส้น
+- `acct_ledger_cache_sync` ดึงสำเนาเอกสารขายจาก PEAK (ใบแจ้งหนี้ ใบเสร็จ ใบลดหนี้) มาลงกระจกของเราทีละงวด
+  ใช้ก่อนเปิดหน้ากระทบ 4 ทาง เพื่อให้ช่อง PEAK ของงวดนั้นมีข้อมูล
+- `acct_receive_payment_sync` ดูแผนรับชำระที่จะ sync ไป PEAK/FlowAccount จากคู่เงินที่คนยืนยันแล้ว (ที่ acc เป็นศูนย์กลาง)
+- `acct_peak_billing_note_void` ยกเลิกใบวางบิลจริงใน PEAK **ถอนคืนไม่ได้** ตัวตน AI เรียกไม่ได้ ต้องเป็นคนสั่งเท่านั้น
+  รับเฉพาะใบที่ถูกทำเครื่องหมายว่าควรยกเลิก ห้ามเสนอให้กดโดยไม่ถามผู้ใช้ก่อน
+- นำเข้ารายงาน PEAK (.xlsx) ดูสกิล `acct-peak-import`
+
 ## เครื่องมือ MCP ที่สกิลนี้ใช้
 <!-- mcp-tools -->
 - `acct_peak_compare`
 - `acct_pay_request_get`
 - `acct_pay_request_list`
+- `acct_ledger_compare`
+- `acct_ledger_cache_sync`
+- `acct_receive_payment_sync`
+- `acct_peak_billing_note_void`
 <!-- /mcp-tools -->

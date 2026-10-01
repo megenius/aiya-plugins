@@ -42,6 +42,14 @@ description: >-
 👉 ดูเอกสารบริษัทที่ยังขาด: ใช้สกิล acct-company-docs
 ```
 
+## ดูว่าตึกไหนวางบิลแล้วในงวด
+
+`acct_vendor_billing_rounds` (อ่านอย่างเดียว) หนึ่งแถวคือคู่ค้าหนึ่งราย บอกว่าวางบิลไปแล้ว (`placed`) หรือยังค้าง (`waiting`)
+และวันนี้อยู่ในหน้าต่างที่เขารับวางบิลไหม (`window_open_today`)
+- 🔴 `amount_satang = null` แปลว่างวดนี้ยังไม่มีใบของรายนี้ **ห้ามอ่านเป็นศูนย์**
+- 🔴 `placed` ไม่ได้แปลว่าเก็บเงินได้แล้ว (ฐานยังไม่มีสายเชื่อมกับเงินเข้า) ห้ามสรุปว่าเก็บได้
+- `window_from` `window_to` เป็น `null` แปลว่ายังไม่มีใครกรอกวันวางบิล ไม่ใช่รับวางบิลทุกวัน กรอกด้วย `acct_vendor_profile_set`
+
 ## ประตูอนุมัติ
 
 `acct_vendor_profile_set` และ `acct_vendor_doc_req_set` ไม่อยู่ในด่าน hook ชั้น 1 (ไม่ใช่เงิน/เอกสารทางการ
@@ -62,4 +70,5 @@ description: >-
 - `acct_vendor_checklist`
 - `acct_vendor_doc_req_set`
 - `acct_vendor_today`
+- `acct_vendor_billing_rounds`
 <!-- /mcp-tools -->
