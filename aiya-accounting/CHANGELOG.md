@@ -1,5 +1,9 @@
 # CHANGELOG - aiya-accounting
 
+## 1.0.9-alpha (2026-10-07)
+
+- bump เวอร์ชันเพื่อส่งคู่มือ `references/erp-books.md` (เครื่องมือสมุด/งบจาก ERP 8 ตัว · #5101) ขึ้นรอบ publish นี้ (Boy ขอผ่านสี่ถัง 7 ต.ค.)
+
 ## 1.0.7-alpha (2026-10-01)
 
 - `acct-peak-import`: ถอดบรรทัดชั่วคราวที่บอกว่า `sale_taxInvoice_` ยังนำเข้าไม่ได้ (api #4088 · acc #4089 ขึ้น prod แล้ว · #4082) เพิ่มวิธีอ่านสรุปไฟล์ใบกำกับภาษีขาย: แยก `invoice_total_satang` กับ `credit_note_total_satang` (ใบลดหนี้ลดยอด ห้ามรายงานเป็นยอดรวมเดียว) · มี `credit_notes_new` ให้เตือนตรวจกับฝ่ายบัญชีก่อนยืนยัน · `changed_rows` ต้องบอกก่อนยืนยันเสมอ · ย้ำห้าม AI เรียก apply เอง
