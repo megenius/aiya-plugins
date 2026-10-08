@@ -1,5 +1,14 @@
 # CHANGELOG - aiya-chat-team
 
+## 1.0.7-alpha (2026-10-06)
+
+- เพิ่มสกิล `edit-bot-reply` แก้ข้อความที่บอทตอบอัตโนมัติ `edit-bot-persona` แก้บุคลิกและค่าระดับช่องทาง และ `setup-auto-reply` ตั้งตอบกลับอัตโนมัติเรื่องใหม่เป็น draft เดิมทีมนี้ร่างได้แต่ข้อความที่ **คน** จะกดส่ง พอบอทตอบผิดเองก็ทำอะไรต่อไม่ได้
+- สกิลทั้งสามใบอ้างเฉพาะ tool ของชุด `autoreply` บน connector `aiya-line` (`line_autoreply_*` และ `line_channel_list`) กับ `knowledge_search` จาก `aiya-agents`
+- **สิทธิ์เขียนใหม่:** ปลั๊กอินที่เดิมอ่านล้วน ตอนนี้ต้องต่อ connector `aiya-line` (ชุด autoreply, เขียน flow ได้) ไม่ต่อ connector เพจ ด่านกันพลาดอยู่ที่ข้อความในสกิล ไม่ใช่การจำกัดสิทธิ์ที่ connector agent ทั้ง 3 ตำแหน่งยังจำกัด tool อ่านอย่างเดียว
+- สกิลบังคับอ่าน flow ของจริงก่อนแก้ เพราะ `line_autoreply_save_graph` เขียนทับทั้งใบ ส่ง node ไม่ครบ = เมนูหายทั้ง flow และห้ามเปิดใช้ flow หรือแก้ flow ที่ใช้งานอยู่โดยเจ้าของไม่ยืนยัน
+- `edit-bot-persona` กันพลาดสองอย่าง: เดา `autoReplyMode` ส่งไปโดยไม่ได้ตั้งใจเปลี่ยนโหมด และส่ง `enabledTools` ไม่ครบแล้วเครื่องมือหาย (ฟิลด์นี้ถูกแทนที่ทั้งชุด ต่างจากฟิลด์อื่นที่ระบบ merge ให้)
+- การสร้าง flow พร้อมคีย์เวิร์ดอาศัย `line_autoreply_create` / `line_autoreply_update` ที่รับ `keywords` `matchMode` `hwids` `dataPattern` `richMenuAliasId` ได้ (v2 PR #1619 merge แล้ว)
+
 ## 1.0.5-alpha (2026-09-27)
 
 - ย้าย connector `aiya-agents` กลับไปชี้ `https://agents.aiya.me/mcp` (#2807) เอนทรี 1.0.4-alpha ด้านล่างที่บอกว่าย้ายกลับ `mcp.aiya.me/mcp` แล้ว **เขียนเร็วเกินไป** v2#922 และ #2977 (เงื่อนไขที่ต้องขึ้น prod ก่อน) ยังไม่ได้ deploy จริง discovery ของ mcp.aiya.me ยังชี้ authorization server ผิดตัวให้ connector นี้อยู่ ใช้ `agents.aiya.me/mcp` แทนจนกว่าทั้งสองใบนั้นขึ้น prod แล้วพิสูจน์ discovery ตรงกัน

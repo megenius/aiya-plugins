@@ -2,5 +2,9 @@
   "aiya-agents": {
     "type": "http",
     "url": "https://agents.aiya.me/mcp"
+  },
+  "aiya-line": {
+    "type": "http",
+    "url": "https://mcp.aiya.me/line?toolset=autoreply"
   }
 }
