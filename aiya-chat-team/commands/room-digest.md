@@ -5,7 +5,7 @@ argument-hint: [ชื่อร้าน หรือ workspace ถ้ามี�
 
 # /room-digest
 
-สรุปสุขภาพการตอบแชทของร้าน $ARGUMENTS วันนี้ ให้ agent เนย (chat_head) ทำ ใช้ skill **daily-room-digest**
+สรุปสุขภาพการตอบแชทของร้าน $ARGUMENTS วันนี้ ให้ agent เนย (chat-head) ทำ ใช้ skill **daily-room-digest**
 
 ## ขั้นตอน
 

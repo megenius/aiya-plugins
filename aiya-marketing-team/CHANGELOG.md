@@ -1,5 +1,9 @@
 # CHANGELOG - aiya-marketing-team
 
+## 1.0.7-alpha (2026-10-27)
+
+- เปลี่ยนชื่อ agent จาก _ เป็น - (เช่น mkt_brand เป็น mkt-brand) เพราะ Claude Desktop เตือนว่าชื่อ agent ที่มี _ ไม่ถูกรูปแบบ · ไม่ต้องทำอะไรเพิ่ม อัปเดตปลั๊กอินแล้วคำเตือนหายไป
+
 ## 1.0.6-alpha (2026-10-11)
 
 - ย้าย connector `aiya-agents` กลับไปชี้ `https://mcp.aiya.me/mcp` (#3999) วันนี้พิสูจน์จาก URL จริงแล้วว่า discovery ของทั้งสองโฮสต์ประกาศ resource = `https://mcp.aiya.me/mcp` ตรงกัน ไคลเอนต์ที่เข้มงวดจึงไม่ปฏิเสธ connector นี้อีก bump เวอร์ชันตาม (ส่วน bloค Unreleased ด้านล่างยังไม่ publish ตามเดิม)

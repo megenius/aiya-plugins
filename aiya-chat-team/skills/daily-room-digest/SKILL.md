@@ -1,6 +1,6 @@
 ---
 name: daily-room-digest
-description: Use when the owner asks for a daily wrap-up of chat rooms, or chat_head runs the scheduled digest. Summarizes room count, reply speed, and rooms needing attention across every channel, in plain language, in exactly 3 points.
+description: Use when the owner asks for a daily wrap-up of chat rooms, or chat-head runs the scheduled digest. Summarizes room count, reply speed, and rooms needing attention across every channel, in plain language, in exactly 3 points.
 ---
 
 # สรุปห้องรายวันให้เจ้าของร้าน (daily room digest)

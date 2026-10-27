@@ -1,6 +1,6 @@
 ---
 name: triage-urgency
-description: Use when chat_head needs to rank which rooms across every channel to hurry on first. Orders rooms by wait time, then customer value, then emotion signal, always with the counted time window attached, never a vibe-based guess.
+description: Use when chat-head needs to rank which rooms across every channel to hurry on first. Orders rooms by wait time, then customer value, then emotion signal, always with the counted time window attached, never a vibe-based guess.
 ---
 
 # จัดลำดับความเร่งด่วนของห้อง (triage urgency)
