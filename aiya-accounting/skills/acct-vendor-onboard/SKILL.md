@@ -16,6 +16,7 @@ description: >-
 1. `acct_vendor_profile_get` ดูว่ามีอะไรอยู่แล้วก่อนเสมอ **ห้ามถามซ้ำช่องที่มีค่าแล้ว**
 2. ถามเฉพาะช่องที่ว่าง **ทีละคำถามเดียวจบ** ห้ามยิงฟอร์ม 12 ช่องรวดเดียว
 3. ได้คำตอบแล้ว `acct_vendor_profile_set` บันทึก
+   ถ้ายังไม่มีรายชื่อลูกค้าในทะเบียน ให้เพิ่มจากผู้ติดต่อ PEAK ด้วย `acct_vendor_customer_create_from_contact`
 4. `acct_vendor_doc_req_set` ตั้งเอกสารที่ลูกค้ารายนั้นขอ (ถ้ามี)
 5. **อ่านกลับทุกช่องให้ผู้ใช้ยืนยันคำต่อคำก่อนถือว่าจบงาน** [ต้องให้คนยืนยัน]
 
@@ -66,6 +67,7 @@ description: >-
 <!-- mcp-tools -->
 - `acct_vendor_profile_get`
 - `acct_vendor_profile_set`
+- `acct_vendor_customer_create_from_contact`
 - `acct_vendor_checklist`
 - `acct_vendor_doc_req_set`
 - `acct_vendor_today`

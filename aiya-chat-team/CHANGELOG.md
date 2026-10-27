@@ -1,5 +1,9 @@
 # CHANGELOG - aiya-chat-team
 
+## 1.0.11-alpha (2026-10-27)
+
+- ถอด connector `aiya-chat` (`/chat`) ชั่วคราว เพราะ Claude Code ต่อไม่ได้ · เครื่องมือแชทยังใช้ได้ครบผ่าน `aiya-agents` ไม่ต้องทำอะไรเพิ่ม
+
 ## 1.0.10-alpha (2026-10-27)
 
 - เพิ่ม connector `aiya-chat` ชี้ `https://mcp.aiya.me/chat` (ชุดตอบแชท: chat_ group_ knowledge_ document_ prompt_ playbook_) ตามที่ David ขอ เดิมใช้ tool เหล่านี้ผ่าน `aiya-agents` (`/mcp`) ซึ่งประกาศทุกตัว connector ใหม่ประกาศเฉพาะชุดแชท ต้อง OAuth เหมือน connector อื่น

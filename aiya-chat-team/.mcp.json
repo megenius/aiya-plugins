@@ -3,10 +3,6 @@
     "type": "http",
     "url": "https://mcp.aiya.me/mcp"
   },
-  "aiya-chat": {
-    "type": "http",
-    "url": "https://mcp.aiya.me/chat"
-  },
   "aiya-line": {
     "type": "http",
     "url": "https://mcp.aiya.me/line?toolset=autoreply"
