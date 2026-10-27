@@ -1,5 +1,7 @@
 # aiya-ads-team
 
+Add more teams: Customize > Plugins > Discover > New plugins > + (do not re-add the marketplace repo).
+
 ปลั๊กอิน Claude Cowork / Claude Code สำหรับทีมโฆษณา AI ของร้านค้า AIYA
 ทีมนี้ **เสนอได้ กดเองไม่ได้** ทุกอย่างที่ใช้เงินจริงต้องให้เจ้าของกดเองที่หน้าโต๊ะแอด `/ads`
 
@@ -9,7 +11,7 @@
 
 | ชื่อ | URL | ใช้ทำอะไร |
 |---|---|---|
-| `aiya-agents` | `https://mcp.aiya.me/mcp` | อ่านแผนสัปดาห์ที่อนุมัติแล้วและผลลัพธ์จริงผ่าน `mkt_plan_get` / `mkt_outcome_list` / ดูตัวอย่างแคมเปญผ่าน `mkt_ads_preview_run` |
+| `aiya-mkt` | `https://mcp.aiya.ai/mkt` | อ่านแผนสัปดาห์ที่อนุมัติแล้วและผลลัพธ์จริงผ่าน `mkt_plan_get` / `mkt_outcome_list` / ดูตัวอย่างแคมเปญผ่าน `mkt_ads_preview_run` |
 
 เป็น HTTP + OAuth ยังไม่ล็อกอินจะได้ 401 ล็อกอินผ่าน `/mcp` ใน Claude Code
 

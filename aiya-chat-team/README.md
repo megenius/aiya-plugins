@@ -1,5 +1,7 @@
 # aiya-chat-team
 
+Add more teams: Customize > Plugins > Discover > New plugins > + (do not re-add the marketplace repo).
+
 ปลั๊กอิน Claude Cowork / Claude Code สำหรับทีมตอบแชท AI ของร้านค้า AIYA
 ทีม agent 3 ตำแหน่งเดียวกับสมองกลางของ AIYA: เนย (chat-head) หัวหน้าดูภาพรวม · ปิง (chat-responder)
 ตอบห้องที่ยังทันชั่วโมงแรก · หยก (chat-followup) ไล่ห้องที่ใกล้หลุดกรอบ 7 วัน

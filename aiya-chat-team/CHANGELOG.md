@@ -1,5 +1,9 @@
 # CHANGELOG - aiya-chat-team
 
+## 1.0.14-alpha (2026-10-28)
+
+- Connector moves to https://mcp.aiya.ai/chat: log in once more; the old mcp.aiya.me connector keeps working.
+
 ## 1.0.13-alpha (2026-10-27)
 
 - เปลี่ยนชื่อ agent จาก _ เป็น - (เช่น mkt_brand เป็น mkt-brand) เพราะ Claude Desktop เตือนว่าชื่อ agent ที่มี _ ไม่ถูกรูปแบบ · ไม่ต้องทำอะไรเพิ่ม อัปเดตปลั๊กอินแล้วคำเตือนหายไป

@@ -1,5 +1,7 @@
 # aiya-marketing-team
 
+Add more teams: Customize > Plugins > Discover > New plugins > + (do not re-add the marketplace repo).
+
 ปลั๊กอิน Claude Cowork / Claude Code สำหรับทีมการตลาด AI ของร้านค้า AIYA
 รวม skill 18 ใบ (เครื่องมือคิดและวิธีทำงาน 14 ใบจากเพลย์บุ๊ก `positions/PLAYBOOK-mar-thinking-tools-20260910.md`
 และคู่มือแพลตฟอร์ม 4 ใบที่อ่านของจริงสดทุกครั้งผ่าน connector)
@@ -16,13 +18,13 @@
 | `aiya-line` | `https://mcp.aiya.me/line` | ผู้ติดตามและข้อความ LINE OA |
 | `aiya-sales` | `https://mcp.aiya.me/sales` | ข้อมูลทีมขาย/ออเดอร์ |
 | `aiya-events` | `https://mcp.aiya.me/events` | ปฏิทินอีเวนต์/กิจกรรมร้าน |
-| `aiya-agents` | `https://mcp.aiya.me/mcp` | ท่อวางแผน-สร้างภาพ-ตรวจ-จัดคิวรายสัปดาห์ (`mkt_*`) และคู่มือแพลตฟอร์ม |
+| `aiya-mkt` | `https://mcp.aiya.ai/mkt` | ท่อวางแผน-สร้างภาพ-ตรวจ-จัดคิวรายสัปดาห์ (`mkt_*`) และคู่มือแพลตฟอร์ม |
 
 ทุกตัวเป็น HTTP + OAuth (ยังไม่ล็อกอินจะได้ 401) วิธีล็อกอินอยู่ใน `reference/onboarding.md`
 
 ## ท่อทีมการตลาด (weekly plan pipeline)
 
-Connector `aiya-agents` เปิดทางให้ทีม AI ภายใน (แนน/มิ้นท์/กัน/ตาล) เดินท่อวางแผนสัปดาห์ต่อจากใบประกาศผลลัพธ์ที่เจ้าของประกาศไว้: `mkt_plan_propose` เสนอแผน → เจ้าของกด `mkt_plan_approve` เอง (P2 ห้ามกดแทน) → `mkt_creative_run` ดูคิวสร้างภาพ → `mkt_review_run` ตรวจร่างกับคำต้องห้าม/ราคาโปร/คำชวน → `mkt_handoff_run` ส่งร่างขึ้นปฏิทินเพจ → `mkt_queue_run` จัดคิวช่องเวลา จบที่ "รอเจ้าของกด" เสมอ ไม่มีขั้นไหนโพสต์ขึ้นเพจ/LINE จริงหรือใช้เงินจากในแชทได้เลย ดูรายละเอียดในสกิล `month-plan` และ `test-and-learn`
+Connector `aiya-mkt` เปิดทางให้ทีม AI ภายใน (แนน/มิ้นท์/กัน/ตาล) เดินท่อวางแผนสัปดาห์ต่อจากใบประกาศผลลัพธ์ที่เจ้าของประกาศไว้: `mkt_plan_propose` เสนอแผน → เจ้าของกด `mkt_plan_approve` เอง (P2 ห้ามกดแทน) → `mkt_creative_run` ดูคิวสร้างภาพ → `mkt_review_run` ตรวจร่างกับคำต้องห้าม/ราคาโปร/คำชวน → `mkt_handoff_run` ส่งร่างขึ้นปฏิทินเพจ → `mkt_queue_run` จัดคิวช่องเวลา จบที่ "รอเจ้าของกด" เสมอ ไม่มีขั้นไหนโพสต์ขึ้นเพจ/LINE จริงหรือใช้เงินจากในแชทได้เลย ดูรายละเอียดในสกิล `month-plan` และ `test-and-learn`
 
 ### Skills (18 ใบ)
 

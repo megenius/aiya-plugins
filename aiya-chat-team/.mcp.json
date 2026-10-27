@@ -1,7 +1,7 @@
 {
-  "aiya-agents": {
+  "aiya-chat": {
     "type": "http",
-    "url": "https://mcp.aiya.me/mcp"
+    "url": "https://mcp.aiya.ai/chat"
   },
   "aiya-line": {
     "type": "http",
