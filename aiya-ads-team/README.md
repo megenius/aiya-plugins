@@ -4,6 +4,8 @@ Add more teams: Customize > Plugins > Discover > New plugins > + (do not re-add 
 
 After upgrading: turn off or remove the old `aiya-agents` connector (`https://mcp.aiya.me/mcp`) in Settings > Connectors, so answers come from the new connector and not the old one.
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 ปลั๊กอิน Claude Cowork / Claude Code สำหรับทีมโฆษณา AI ของร้านค้า AIYA
 ทีมนี้ **เสนอได้ กดเองไม่ได้** ทุกอย่างที่ใช้เงินจริงต้องให้เจ้าของกดเองที่หน้าโต๊ะแอด `/ads`
 

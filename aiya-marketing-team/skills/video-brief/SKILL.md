@@ -3,6 +3,8 @@ name: video-brief
 description: Use when the owner asks for a short video, reel, TikTok script, "ทำคลิปสั้น", "เขียนบทวิดีโอ". Writes a 15 to 30 second script with shot by shot beats, hook in the first 3 seconds, one call to action, and says the system does not film or edit.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # video-brief (บทคลิปสั้น 15 ถึง 30 วินาที)
 
 ตอบคำถามเดียว: **คลิปสั้นชิ้นนี้จะพูดอะไร ในลำดับไหน ให้คนดูไม่เลื่อนผ่านใน 3 วินาทีแรก**

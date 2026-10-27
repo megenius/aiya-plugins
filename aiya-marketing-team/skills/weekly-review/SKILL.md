@@ -3,6 +3,8 @@ name: weekly-review
 description: Use when the owner asks "สัปดาห์นี้เป็นไงบ้าง", "weekly review", "ดีขึ้นไหม", or wants a plain check-in vs last week. Pulls chat-funnel numbers and experiment status, compares honestly even when worse, exactly 3 sentences, never a dashboard dump.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # weekly-review (ทบทวนสัปดาห์ ภาษาคน)
 
 ตอบคำถามเดียว: **เทียบกับสัปดาห์ก่อน สัปดาห์นี้ดีขึ้น แย่ลง หรือเท่าเดิม แล้วสัปดาห์หน้าควรทำอะไรหนึ่งอย่าง**

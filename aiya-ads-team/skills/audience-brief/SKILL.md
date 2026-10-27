@@ -3,6 +3,8 @@ name: audience-brief
 description: Use when the owner needs to describe who an ad should target, turning a vague idea like "people who might buy" into a written brief based on the shop's approved weekly plan, never guessed demographics.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # audience-brief (บรีฟกลุ่มเป้าหมาย)
 
 ตอบคำถามเดียว: **แคมเปญนี้ควรพูดกับใคร เขียนเป็นบรีฟที่คนอื่นอ่านแล้วตั้งกลุ่มเป้าหมายต่อได้**

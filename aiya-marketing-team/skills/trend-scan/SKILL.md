@@ -3,6 +3,8 @@ name: trend-scan
 description: Use when the owner asks "ตอนนี้อะไรมาแรง", "เทรนด์อะไรน่าเกาะ" or before planning a month. Reads trends from the shop own chat and page data plus the platform playbook, and says plainly there is no external trend feed.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # trend-scan (ส่องเทรนด์จากข้อมูลของร้านเอง)
 
 ตอบคำถามเดียว: **ตอนนี้ลูกค้าของร้านนี้กำลังสนใจอะไรมากขึ้นกว่าเดิม และอะไรกำลังเงียบลง**

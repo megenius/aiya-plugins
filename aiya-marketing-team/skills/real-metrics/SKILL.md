@@ -3,6 +3,8 @@ name: real-metrics
 description: Use before putting any number in a report or promising to track a result. Sorts every metric into measured by the system, counted by hand, or not knowable today, and blocks claims about dashboards that do not exist.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # ตัวชี้วัดที่วัดได้จริง
 
 ตอบคำถามเดียว: **ตัวเลขนี้ใครวัด และวัดได้จริงวันนี้ไหม** ก่อนเอาไปสัญญากับเจ้าของร้าน

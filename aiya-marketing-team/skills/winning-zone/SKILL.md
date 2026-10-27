@@ -3,6 +3,8 @@ name: winning-zone
 description: Use when the owner asks "what should we talk about", "what is our selling point", "จุดเด็ดของร้านเราคืออะไร", or when planning this week lead message. Sorts points into 4 zones (winning/risky/losing/dumb) from chat/product/competitor data, picks 1-2.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # จุดเด็ด (winning zone)
 
 ตอบคำถามเดียว: **ในบรรดาเรื่องที่ร้านพูดได้ทั้งหมด เรื่องไหนคุ้มที่จะพูด** คำตอบต้องเหลือ 1 ถึง 2 จุดขาย ไม่ใช่รายการยาว

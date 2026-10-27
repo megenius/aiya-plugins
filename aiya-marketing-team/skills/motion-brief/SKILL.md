@@ -3,6 +3,8 @@ name: motion-brief
 description: Use when the owner asks for a GIF, short animation, animated sticker or "ภาพขยับ". Writes a frame by frame brief for someone outside the system to produce, and states up front that no tool here renders animation.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # motion-brief (บรีฟภาพขยับสั้นให้คนนอกระบบไปทำ)
 
 ตอบคำถามเดียว: **ภาพขยับชิ้นนี้ต้องมีกี่เฟรม เฟรมละอะไร ให้คนที่ไม่เคยคุยกับเราทำตามได้เลย**

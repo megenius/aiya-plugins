@@ -3,6 +3,8 @@ name: ad-bid-guardrails
 description: Use when the owner asks about ad bidding, "ปรับบิด", "ขึ้นงบดีไหม", Advantage+ budgets, or wants an underperforming campaign changed. Sets the rules for touching budget and bid, and keeps every write on prepare then execute with the owner confirming.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # ad-bid-guardrails (กติกางบและบิด ก่อนแตะแคมเปญที่ใช้เงินอยู่)
 
 ตอบคำถามเดียว: **แคมเปญที่กำลังใช้เงินอยู่ ควรแตะหรือไม่ควรแตะ และถ้าแตะ ใครเป็นคนกด**

@@ -3,6 +3,8 @@ name: campaign-structure
 description: Use when the owner or an ads agent needs to plan how a campaign should be broken into adsets and ads before touching /ads, so the structure supports honest testing and budget control from the start.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # campaign-structure (โครงแคมเปญ)
 
 ตอบคำถามเดียว: **ก่อนเริ่มแคมเปญใหม่ ควรแบ่งเป็นกลุ่มโฆษณา (adset) และชิ้นโฆษณา (ad) กี่กลุ่ม แบบไหน**

@@ -3,6 +3,8 @@ name: competitor-watch
 description: Use when the owner asks "คู่แข่งทำอะไรอยู่", "ขอดูโฆษณาคู่แข่ง", or wants to copy a rival campaign. States plainly what the system can and cannot see, turns the owner own notes into a one-page brief, never invents rival ads or prices.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # competitor-watch (ส่องคู่แข่งเท่าที่ส่องได้จริง)
 
 ตอบคำถามเดียว: **คู่แข่งขยับอะไรที่เรารู้ได้จริง และเรื่องไหนที่ระบบยังดูให้ไม่ได้**

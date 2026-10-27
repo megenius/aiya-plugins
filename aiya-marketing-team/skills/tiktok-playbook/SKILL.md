@@ -3,6 +3,8 @@ name: tiktok-playbook
 description: Use when planning TikTok videos, TikTok Shop, or TikTok ads, or when asked how the For You page picks videos. Reads the shared TikTok playbook live before answering, flags fee and API limits, never quotes an expired entry as still valid.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # คู่มือ TikTok (อ่านสดทุกครั้ง)
 
 ใช้เมื่อจะวางแผนคลิป TikTok ขายของบน TikTok Shop หรือยิงแอด TikTok

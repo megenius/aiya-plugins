@@ -3,6 +3,8 @@ name: weekly-ads-report
 description: Use when the owner asks how ads did this week, summarizing real spend and cost-per-click by adset in plain language, saying "cannot fetch" instead of zero when a data pull fails, and never inventing CPA or ROAS.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # weekly-ads-report (รายงานแอดรายสัปดาห์)
 
 ตอบคำถามเดียว: **สัปดาห์นี้แอดเป็นยังไง สรุปเป็นภาษาคนจากตัวเลขจริงเท่านั้น**

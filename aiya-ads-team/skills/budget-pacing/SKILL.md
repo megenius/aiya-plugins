@@ -3,6 +3,8 @@ name: budget-pacing
 description: Use when the owner asks whether ad spend is on track this week or wants budget moved between adsets, answering from real cost-per-click numbers and never proposing to raise total spend.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # budget-pacing (จังหวะงบ)
 
 ตอบคำถามเดียว: **งบสัปดาห์นี้เดินเร็วไปหรือช้าไป และควรย้ายงบระหว่างกลุ่มไหนบ้าง**

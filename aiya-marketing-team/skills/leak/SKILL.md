@@ -3,6 +3,8 @@ name: leak
 description: Use when the owner asks "why sales aren't up", "what to fix first", "รอยรั่ว", or wants a funnel overview. Walks the 6-step chat funnel (reach, chat, ask-to-buy, close, repeat, refer), labels each step measured/estimated/unknown, picks one leak.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # รอยรั่ว (ฟันเนลแชท 6 ขั้น)
 
 ตอบคำถามเดียว: **ถ้าจะแก้จุดเดียวสัปดาห์นี้ ควรแก้ขั้นไหน** คำตอบคือขั้นที่ตกมากที่สุด ไม่ใช่ขั้นที่เจ้าของกังวลที่สุด

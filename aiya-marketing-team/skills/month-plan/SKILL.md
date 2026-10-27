@@ -3,6 +3,8 @@ name: month-plan
 description: Use when the owner wants a full month planned, asks "วางแผนเดือนนี้", "แผนเดือนหน้า", or gives a goal ("อยากได้ลูกค้าใหม่เพิ่ม") to turn into a plan. Chains goal to one theme to a 4-week calendar to channel to budget, using the thinking-tool skills.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # month-plan (เป้าธุรกิจ → แผนเดือน)
 
 ตอบคำถามเดียว: **เดือนนี้ร้านควรทำอะไรบ้าง เรียงเป็นสัปดาห์ พูดเรื่องอะไร กับใคร ช่องไหน งบเท่าไหร่**

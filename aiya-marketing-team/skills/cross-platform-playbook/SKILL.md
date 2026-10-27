@@ -3,6 +3,8 @@ name: cross-platform-playbook
 description: Use when comparing platforms, splitting a budget across channels, or judging whether reported ad results are real. Reads the shared cross-platform playbook live before answering and never quotes an expired entry as still valid.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # คู่มือข้ามแพลตฟอร์ม (อ่านสดทุกครั้ง)
 
 ใช้เมื่อคำถามไม่ได้อยู่กับแพลตฟอร์มเดียว เช่น จะแบ่งงบยังไง หรือเชื่อตัวเลขที่ระบบโฆษณารายงานได้แค่ไหน

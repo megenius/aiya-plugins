@@ -3,6 +3,8 @@ name: infographic-brief
 description: Use when the owner asks for an infographic, a "ภาพสรุป", a comparison chart, or wants numbers turned into one picture. Builds the layout brief block by block from real shop data, then hands it to the creative position to render.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # infographic-brief (โครงภาพสรุปให้ครีเอทีฟเอาไปทำภาพ)
 
 ตอบคำถามเดียว: **ข้อมูลกองนี้จะกลายเป็นภาพเดียวที่คนดู 5 วินาทีแล้วเข้าใจได้ยังไง**

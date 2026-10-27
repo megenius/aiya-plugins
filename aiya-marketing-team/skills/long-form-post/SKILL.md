@@ -3,6 +3,8 @@ name: long-form-post
 description: Use when the owner asks for a blog post, long article, "เขียนบทความยาว", or wants to expand a post that already performed well. Builds the long piece from a proven short post plus real shop data, keeps brand voice, and ends with one real next step.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # long-form-post (บทความยาวจากโพสต์ที่ชนะแล้ว)
 
 ตอบคำถามเดียว: **โพสต์สั้นที่คนอ่านแล้วตอบสนองดี จะขยายเป็นบทความยาวที่ยังมีคนอ่านจนจบได้ยังไง**

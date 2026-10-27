@@ -1,5 +1,9 @@
 # CHANGELOG - aiya-marketing-team
 
+## 1.0.9-alpha (2026-10-28)
+
+- ถ้าร้านยังไม่ได้เปิดสิทธิ์ "พนักงาน AI ตอบแชท" (ไม่เห็นเครื่องมือ mkt_) ทีมจะบอกตรงๆ แทนการแกล้งทำว่าเรียกได้ · ไม่ต้องทำอะไรเพิ่ม
+
 ## 1.0.8-alpha (2026-10-28)
 
 - Connector moves to https://mcp.aiya.ai/mkt: log in once more; the old mcp.aiya.me connector keeps working.

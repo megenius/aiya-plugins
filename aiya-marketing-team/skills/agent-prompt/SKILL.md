@@ -3,6 +3,8 @@ name: agent-prompt
 description: Use when the owner wants to teach the AI marketing staff a new rule, paste a playbook prompt, or asks why the AI ignores what was written. Explains which of the three storage places the staff actually reads today and the length caps.
 ---
 
+ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
+
 # วางคำสั่งให้พนักงาน AI อ่านจริง
 
 ตอบคำถามเดียว: **เขียนกติกาไว้ตรงไหน พนักงาน AI ถึงจะอ่านจริง** เพราะเขียนผิดที่คือเขียนแล้วไม่มีใครอ่าน
