@@ -1,5 +1,9 @@
 # CHANGELOG - aiya-accounting
 
+## 1.0.12-alpha (2026-10-28)
+
+- connector `aiya-acct` ย้ายไป https://mcp.aiya.ai/acct (ชุดเดิม เครื่องมือเดิม) · หลังอัปเดตต้องล็อกอิน aiya-acct อีก 1 ครั้ง · connector ที่ใช้ mcp.aiya.me ยังใช้ได้ต่อตามเดิม ไม่ต้องลบ
+
 ## 1.0.11-alpha (2026-10-27)
 
 - connector ใหม่ชื่อ `aiya-acct` ชี้ https://mcp.aiya.me/acct มีเฉพาะเครื่องมือบัญชี + เครื่องมือกลางของร้าน · หลังอัปเดตต้องล็อกอิน connector ใหม่ 1 ครั้ง

@@ -37,7 +37,7 @@
 
 ## ขั้นที่ 2 ล็อกอิน connector aiya-acct
 
-ปลั๊กอินนี้ประกาศ connector `aiya-acct` (`https://mcp.aiya.me/acct`) ไว้ใน `.mcp.json`
+ปลั๊กอินนี้ประกาศ connector `aiya-acct` (`https://mcp.aiya.ai/acct`) ไว้ใน `.mcp.json`
 
 > เคยต่อ connector เดิม `aiya-agents` (`https://mcp.aiya.me/mcp`) ไว้แล้ว: **ไม่ต้องลบ** ใช้ได้ทั้งคู่ เพราะ /mcp ยังมีเครื่องมือบัญชีครบจนกว่าเราจะประกาศปิดล่วงหน้า · จะลบตัวเดิมก็ได้หลังล็อกอิน `aiya-acct` แล้ว
 ต้องล็อกอินแบบ OAuth ครั้งแรกก่อนใช้
