@@ -1,7 +1,7 @@
 #!/bin/bash
 # ด่านชั้น 1 ของ "ประตูอนุมัติ"
 # บังคับ decision=ask ทุกครั้งที่ agent จะเรียก tool ที่กระทบเงิน/เอกสารทางการ/ลูกค้า/ยอดที่บันทึกแล้ว
-# ค่านี้เป็นค่าตั้งต้น · 23 tools ตาม matcher ใน hooks.json
+# ค่านี้เป็นค่าตั้งต้น · 25 tools ตาม matcher ใน hooks.json
 input=$(cat)
 tool_name=$(echo "$input" | grep -o '"tool_name"[[:space:]]*:[[:space:]]*"[^"]*"' | sed -E 's/.*:[[:space:]]*"([^"]*)"/\1/')
 
@@ -33,6 +33,12 @@ case "$tool_name" in
     reason="เงิน+เอกสารทางการ+ลูกค้า: ออกใบจริงหา PEAK/FlowAccount ส่งถึงลูกค้าแล้ว" ;;
   ar_invoice_cancel)
     reason="เอกสารทางการ: ยกเลิกใบที่ออกแล้ว" ;;
+  ar_billing_note_issue)
+    reason="เอกสารทางการ: ออกเลขใบวางบิล (BL-/TBL-) เลขเดินแล้วไม่คืน" ;;
+  ar_billing_note_void)
+    reason="เอกสารทางการ: void ใบวางบิลที่ออกเลขแล้ว ถอนคืนไม่ได้" ;;
+  ar_invoice_promise_set)
+    reason="ลูกค้า: วันนัดรับชำระที่ลูกค้าสัญญา ใช้คาดเงินเข้า" ;;
   ar_run_close|ar_run_reopen)
     reason="แก้ยอดที่บันทึกแล้ว: ล็อก/ปลดล็อกงวดวางบิล" ;;
 esac

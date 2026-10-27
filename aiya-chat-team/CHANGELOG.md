@@ -1,5 +1,13 @@
 # CHANGELOG - aiya-chat-team
 
+## 1.0.10-alpha (2026-10-27)
+
+- เพิ่ม connector `aiya-chat` ชี้ `https://mcp.aiya.me/chat` (ชุดตอบแชท: chat_ group_ knowledge_ document_ prompt_ playbook_) ตามที่ David ขอ เดิมใช้ tool เหล่านี้ผ่าน `aiya-agents` (`/mcp`) ซึ่งประกาศทุกตัว connector ใหม่ประกาศเฉพาะชุดแชท ต้อง OAuth เหมือน connector อื่น
+
+## 1.0.9-alpha (2026-10-11)
+
+- ย้าย connector `aiya-agents` กลับไปชี้ `https://mcp.aiya.me/mcp` (#3999) วันนี้พิสูจน์จาก URL จริงแล้วว่า discovery ของทั้งสองโฮสต์ประกาศ resource = `https://mcp.aiya.me/mcp` ตรงกัน ไคลเอนต์ที่เข้มงวดจึงไม่ปฏิเสธ connector นี้อีก bump เวอร์ชันตาม (`aiya-line` ชุด `autoreply` ไม่ย้ายตาม)
+
 ## 1.0.8-alpha (2026-10-08)
 
 - แก้คำอธิบายปลั๊กอินใน `plugin.json` `marketplace.json` (ทั้งสองไฟล์) และ README ที่ยังเขียนว่าไม่ส่งหาลูกค้าจริงเอง ซึ่งไม่ตรงแล้วตั้งแต่ 1.0.7-alpha เพราะสกิล `setup-auto-reply` เปิด flow ให้บอทตอบลูกค้าเองได้หลังเจ้าของร้านยืนยัน ตอนนี้บอกตรงๆ ว่าร่างข้อความรอคนกดส่ง ส่วนตอบอัตโนมัติตอบเองได้เมื่อเจ้าของยืนยันเปิดใช้ (#5761)

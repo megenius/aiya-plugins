@@ -1,10 +1,15 @@
 # CHANGELOG - aiya-marketing-team
 
+## 1.0.6-alpha (2026-10-11)
+
+- ย้าย connector `aiya-agents` กลับไปชี้ `https://mcp.aiya.me/mcp` (#3999) วันนี้พิสูจน์จาก URL จริงแล้วว่า discovery ของทั้งสองโฮสต์ประกาศ resource = `https://mcp.aiya.me/mcp` ตรงกัน ไคลเอนต์ที่เข้มงวดจึงไม่ปฏิเสธ connector นี้อีก bump เวอร์ชันตาม (ส่วน bloค Unreleased ด้านล่างยังไม่ publish ตามเดิม)
+
 ## Unreleased (MKT-04, 2026-09-28) · ยังไม่ publish (freeze 29 ก.ย. 18:00 ถึง 30 ก.ย. 17:00 · publish เป็นงานห้อง dev หลัง freeze)
 
 - ถอด skill `page-reply` ออกจากปลั๊กอิน ตกลงร่วมกับห้องแอดมินตอบแชท (platform-v3-70) ว่าตอบคอมเมนต์/แชทลูกค้ารายคนเป็นงานแอดมินตอบแชท ไม่ใช่การตลาด (`PLAN.md` ข้อ ช) `page_conversation_reply` ไม่ได้อยู่ในชุดเครื่องมือของทีมนี้อีกแล้ว
 - เจน (`mkt_closer`) เหลือวัดผลอย่างเดียว (นับห้องค้าง/ถามราคาแล้วเงียบ) เลิกร่างข้อความติดตามถึงลูกค้า
 - แก้ description ใน `plugin.json` (ตัด "แชทลูกค้าจริง" ตัวเลข skill 37 -> 36) และตาราง `mkt_head.md`
+- เพิ่ม skill `pricing-packaging` จัดโครงตาราง Tier + ต้นทุน + กำไรขั้นต้นจากตัวเลขที่เจ้าของร้านให้เท่านั้น ห้ามเสนอราคาเอง จบที่ตารางแล้วให้เจ้าของไปแก้ราคาสินค้าที่หน้าร้านเอง (ใช้ `product_list` `product_get` `business_profile_get` เท่านั้น ไม่เรียก `product_add`/`product_update` ตามที่ตกลงกับ `/mkt` ว่าจะซ่อน tool เขียนราคาจากสกิลนี้) ไม่มี tool ใหม่ ไม่แตะ tool เดิม (bump 36 -> 37 skill ใน `plugin.json`)
 
 ## 1.0.5-alpha (2026-09-27)
 

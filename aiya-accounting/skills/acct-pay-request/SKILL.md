@@ -161,4 +161,14 @@ description: >-
 - `acct_pay_request_unlink_bank_txn`
 - `acct_pay_request_item_link_vendor`
 - `acct_pay_request_void`
+- `acct_purchase_bill_list`
+- `acct_purchase_bill_get`
+- `acct_purchase_bill_create`
+- `acct_purchase_bill_link_pay_request`
+- `acct_purchase_bill_record_tax_invoice`
+- `acct_vat_original_confirm`
+- `acct_vat_original_undo`
+- `acct_vat_line_scan_pages_set`
+- `acct_vat_line_file_link`
+- `acct_vat_line_file_unlink`
 <!-- /mcp-tools -->

@@ -103,6 +103,8 @@ description: >-
 - 🔴 `ar_invoice_cancel` ยกเลิกใบวางบิล และ `ar_run_reopen` เปิดรอบที่ปิดแล้วกลับมาแก้
   **ตัวตน AI เรียกไม่ได้** ต้องเป็นคน (คนกดได้ที่ https://acc.aiya.me) ผู้ช่วยทำได้แค่อธิบายว่าควรยกเลิกใบไหนเพราะอะไร
   ห้ามบอกผู้ใช้ว่าจะยกเลิกหรือเปิดรอบให้
+- 🔴 `ar_billing_note_issue` ออกเลขใบวางบิลจากระบบเราเอง (`test` = TBL- ใบซ้อม · `legal` = BL- ใบจริง เปิดเมื่อฝ่ายบัญชีอนุมัติแล้วเท่านั้น) · ค่าปริยายของ `ar_billing_note_issue` คือลองแห้ง (ตอบ `confirm_required` พร้อมผู้ซื้อ ยอด และใบ BL ของ PEAK ที่ชนช่วงเดียวกัน) · ออกจริงด้วย `ar_billing_note_issue` ต้องส่ง `confirm` ตามที่ระบบบอก **ห้ามเดาเติมให้เอง ต้องถามผู้ใช้ก่อน**
+- 🔴 `ar_billing_note_void` void ใบวางบิลที่ระบบเราออกเลขไปแล้ว เลขยังอยู่และถอนคืนไม่ได้ ต้องมีเหตุผลเสมอ ใบที่มีเอกสาร PEAK ผูกอยู่ void ที่นี่ไม่ได้
 
 ## 7. ใบเก่าที่ยกมาและใบกำกับที่ออกเอง
 
@@ -141,7 +143,10 @@ description: >-
 - `ar_annual_run_build`
 - `ar_invoice_issued`
 - `ar_invoice_cancel`
+- `ar_invoice_promise_set`
 - `ar_run_reopen`
+- `ar_billing_note_issue`
+- `ar_billing_note_void`
 - `acct_legacy_invoice_list`
 - `acct_legacy_invoice_mark`
 - `acct_manual_invoice_list`

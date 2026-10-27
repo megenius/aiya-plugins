@@ -1,5 +1,9 @@
 # CHANGELOG - aiya-ads-team
 
+## 1.0.6-alpha (2026-10-11)
+
+- ย้าย connector `aiya-agents` กลับไปชี้ `https://mcp.aiya.me/mcp` (#3999) วันนี้พิสูจน์จาก URL จริงแล้วว่า discovery ของทั้งสองโฮสต์ประกาศ resource = `https://mcp.aiya.me/mcp` ตรงกัน ไคลเอนต์ที่เข้มงวดจึงไม่ปฏิเสธ connector นี้อีก bump เวอร์ชันตาม
+
 ## 1.0.5-alpha (2026-09-27)
 
 - ย้าย connector `aiya-agents` กลับไปชี้ `https://agents.aiya.me/mcp` (#2807) เอนทรี 1.0.4-alpha ด้านล่างที่บอกว่าย้ายกลับ `mcp.aiya.me/mcp` แล้ว **เขียนเร็วเกินไป** v2#922 และ #2977 (เงื่อนไขที่ต้องขึ้น prod ก่อน) ยังไม่ได้ deploy จริง discovery ของ mcp.aiya.me ยังชี้ authorization server ผิดตัวให้ connector นี้อยู่ ใช้ `agents.aiya.me/mcp` แทนจนกว่าทั้งสองใบนั้นขึ้น prod แล้วพิสูจน์ discovery ตรงกัน

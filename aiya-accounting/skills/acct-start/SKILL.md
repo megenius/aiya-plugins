@@ -49,6 +49,10 @@ description: >-
 
 🔴 **ห้ามเดารหัสสินค้า** ไม่รู้รหัสให้เว้นไว้ แต่ชื่อสินค้าต้องกรอกเสมอ
 
+## 4. ทะเบียนพนักงาน (ERP บุคคล · `hr_employee_create`)
+- ดูรายชื่อด้วย `hr_employee_list` และรายคนด้วย `hr_employee_get` · เพิ่ม `hr_employee_create` · แก้ `hr_employee_update` · ปลด `hr_employee_terminate` (ไม่ส่ง confirm: true = ดูตัวอย่างอย่างเดียว ยังไม่บันทึก)
+- สิทธิ์ของ `hr_employee_create` และทุกตัวในชุดนี้: เจ้าของร้าน หรือคนที่ถือสิทธิ์ erp_hr_payroll ในแอป ERP · ไม่มีสิทธิ์ = ได้คำตอบปฏิเสธ HR_FORBIDDEN ให้บอกผู้ใช้ตามนั้น
+- ข้อมูลส่วนตัวในคำตอบของ `hr_employee_create` และทุกตัว: เงินเดือน ค่าลดหย่อน ภ.ง.ด.1 และธนาคารเป็น null · เลขผู้เสียภาษีกับเลขบัญชีเหลือ 4 หลักท้าย · ค่าจริงเห็นเฉพาะคนที่ถือสิทธิ์ erp_hr_pii_view เพิ่ม (ดูช่อง pii_visible ห้ามเดาค่าที่ถูกปิด)
 ## กติกาที่ใช้กับทุกสกิลในชุดนี้
 
 - **ยอดเงินทุกช่องเป็นสตางค์** (จำนวนเต็ม) ฿1,070.00 = `107000` เวลารายงานคนให้แปลงเป็นบาทเสมอ
@@ -56,6 +60,7 @@ description: >-
 - **ไม่มีเครื่องมือโอนเงิน ไม่มีเครื่องมือยื่นภาษี** ในชุดนี้เลย คนต้องทำเองที่ธนาคาร/กรมสรรพากร
 - ค่าที่เป็น `null` แปลว่า *ยังไม่รู้* ห้ามอ่านว่า *ศูนย์* หรือ *ไม่มี*
 
+- ตั้งค่า ERP ของร้าน: `acct_settings_get` ดูว่าร้านบังคับ 2FA ไหม สมาชิกแต่ละคนมีบทบาทอะไรและตั้ง 2FA ของตัวเองแล้วหรือยัง (เจ้าของร้านและผู้ดูแล) · `acct_settings_require_mfa_set` เปิดบังคับ 2FA ได้อย่างเดียว (เจ้าของร้าน + mcp:write) ปิดต้องทำที่หน้าเว็บเพราะต้องยืนยัน 2FA สด
 ## เครื่องมือ MCP ที่สกิลนี้ใช้
 <!-- mcp-tools -->
 - `shop_info`
@@ -68,4 +73,6 @@ description: >-
 - `acct_tax_calendar`
 - `acct_product_map_list`
 - `acct_product_map_set`
+- `hr_employee_create` · `hr_employee_update` · `hr_employee_terminate` · `hr_employee_list` · `hr_employee_get`
+- `acct_settings_get` · `acct_settings_require_mfa_set`
 <!-- /mcp-tools -->
