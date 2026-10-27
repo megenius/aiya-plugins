@@ -144,6 +144,7 @@ description: >-
 - `ar_invoice_issued`
 - `ar_invoice_cancel`
 - `ar_invoice_promise_set`
+- `ar_invoice_submit_record`
 - `ar_run_reopen`
 - `ar_billing_note_issue`
 - `ar_billing_note_void`

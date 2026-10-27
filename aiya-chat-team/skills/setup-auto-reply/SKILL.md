@@ -35,6 +35,7 @@ description: Use when the owner wants the bot to answer a new question automatic
 2. เรียก `line_channel_list` เลือกช่องทาง
 3. เรียก `line_autoreply_list` ดู flow ที่มีอยู่ ถ้ามี flow ที่ดักคำเดียวกันอยู่แล้ว **หยุดและบอกเจ้าของ** เสนอให้ใช้ `edit-bot-reply` แทน ไม่สร้างซ้อน ยกเว้นกรณีเดียว: เป็น draft ที่ keyword ตรงกันและกราฟว่าง (ไม่มี node) ให้เรียก `line_autoreply_get` ดูกราฟของ flow นั้นก่อนตัดสินว่าว่างหรือไม่ (`line_autoreply_list` ไม่บอกจำนวน node ห้ามเดาจากรายการ) ถ้าว่างจริงให้ถามเจ้าของว่าเป็นของที่ทำค้างไว้ใช่ไหม ถ้าใช่ ข้ามขั้นที่ 5 แล้วทำต่อบน flow นั้น (ชุดนี้ไม่มี tool ลบ flow จึงห้ามสร้างซ้ำ)
 4. หาข้อมูลที่ต้องใช้ตอบจาก `knowledge_search` หรือถามเจ้าของ (กฎข้อ 2)
+ถ้าเรียก `knowledge_search` ไม่ได้ (ร้านนี้ยังไม่มีตำแหน่งพนักงาน AI ซึ่งเปิดคลังความรู้) ให้บอกผู้ใช้ตรงๆ ว่าคำตอบนี้ยังไม่ได้อิงคลังความรู้ของร้าน และห้ามเดาราคา สต็อก หรือวันส่ง
 5. เรียก `line_autoreply_create` ส่ง `channelAccountId` + `name` + `triggerType: "keyword"` + `keywords` + `matchMode` ได้ draft ที่ยังว่างเปล่า (ยังไม่มีข้อความตอบ)
 6. เรียก `line_autoreply_node_schema` ดูรูปแบบ node และชื่อ `sourceHandle` ที่ถูกต้อง ก่อนเขียนกราฟ ชื่อ handle ผิด = flow จบเงียบโดยไม่มี error
 7. เรียก `line_autoreply_validate` กับกราฟที่ร่างไว้ (ยังไม่บันทึก) แก้ทุกข้อที่รายงานจนผ่าน

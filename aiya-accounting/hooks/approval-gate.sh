@@ -39,6 +39,8 @@ case "$tool_name" in
     reason="เอกสารทางการ: void ใบวางบิลที่ออกเลขแล้ว ถอนคืนไม่ได้" ;;
   ar_invoice_promise_set)
     reason="ลูกค้า: วันนัดรับชำระที่ลูกค้าสัญญา ใช้คาดเงินเข้า" ;;
+  ar_invoice_submit_record)
+    reason="เงิน+ลูกค้า: บันทึกวันส่งบิล ย้ายวันครบกำหนดของใบ" ;;
   ar_run_close|ar_run_reopen)
     reason="แก้ยอดที่บันทึกแล้ว: ล็อก/ปลดล็อกงวดวางบิล" ;;
 esac
