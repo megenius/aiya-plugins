@@ -1,5 +1,9 @@
 # AIYA ทีมบัญชี (ปลั๊กอินสำหรับ Claude Code)
 
+Add more teams: Customize > Plugins > Discover > New plugins > + (do not re-add the marketplace repo).
+
+After upgrading: turn off or remove the old connector (`aiya-agents` at `https://mcp.aiya.me/mcp`, or `aiya-acct` at `https://mcp.aiya.me/acct` from 1.0.11) in Settings > Connectors, so answers come from the new connector and not the old one.
+
 ปลั๊กอินนี้คือ **คู่มือกำกับขั้นตอน** ให้ผู้ช่วย AI ทำงานบัญชีกับระบบของ AIYA ได้แม่นขึ้น
 มันไม่ได้เพิ่มความสามารถใหม่ให้ระบบ ความสามารถมาจาก **MCP ของ AIYA** ที่คุณต่อไว้
 ปลั๊กอินทำหน้าที่บอกผู้ช่วยว่า *ลำดับที่ถูกคืออะไร* และ *อะไรที่ห้ามทำแทนคน*
@@ -39,7 +43,7 @@
 
 ปลั๊กอินนี้ประกาศ connector `aiya-acct` (`https://mcp.aiya.ai/acct`) ไว้ใน `.mcp.json`
 
-> เคยต่อ connector เดิม `aiya-agents` (`https://mcp.aiya.me/mcp`) ไว้แล้ว: **ไม่ต้องลบ** ใช้ได้ทั้งคู่ เพราะ /mcp ยังมีเครื่องมือบัญชีครบจนกว่าเราจะประกาศปิดล่วงหน้า · จะลบตัวเดิมก็ได้หลังล็อกอิน `aiya-acct` แล้ว
+> เคยต่อ connector เดิมไว้ (`aiya-agents` ที่ `https://mcp.aiya.me/mcp` หรือ `aiya-acct` ที่ `https://mcp.aiya.me/acct` จากรุ่น 1.0.11): หลังล็อกอิน `aiya-acct` ตัวใหม่แล้ว ให้ปิดหรือลบตัวเดิม เพื่อให้คำตอบมาจากตัวใหม่ (ตัวเดิมยังใช้งานได้ ไม่ได้ถูกปิด)
 ต้องล็อกอินแบบ OAuth ครั้งแรกก่อนใช้
 
 1. หลังติดตั้งปลั๊กอิน เปิดหน้าจัดการ MCP connector ของ Claude (ใน Claude Code ใช้ `/mcp` แล้วเลือก `aiya-acct`)

@@ -2,6 +2,8 @@
 
 Add more teams: Customize > Plugins > Discover > New plugins > + (do not re-add the marketplace repo).
 
+After upgrading: turn off or remove the old `aiya-agents` connector (`https://mcp.aiya.me/mcp`) in Settings > Connectors, so answers come from the new connector and not the old one.
+
 ปลั๊กอิน Claude Cowork / Claude Code สำหรับทีมโฆษณา AI ของร้านค้า AIYA
 ทีมนี้ **เสนอได้ กดเองไม่ได้** ทุกอย่างที่ใช้เงินจริงต้องให้เจ้าของกดเองที่หน้าโต๊ะแอด `/ads`
 
