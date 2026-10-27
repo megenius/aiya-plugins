@@ -1,5 +1,10 @@
 # CHANGELOG - aiya-accounting
 
+## 1.0.11-alpha (2026-10-27)
+
+- connector ใหม่ชื่อ `aiya-acct` ชี้ https://mcp.aiya.me/acct มีเฉพาะเครื่องมือบัญชี + เครื่องมือกลางของร้าน · หลังอัปเดตต้องล็อกอิน connector ใหม่ 1 ครั้ง
+- คนที่ใช้ connector เดิม `aiya-agents` (https://mcp.aiya.me/mcp) อยู่แล้ว: **ไม่ต้องลบ** เก็บไว้ได้ ใช้ได้ทั้งคู่ เพราะ /mcp ยังเสิร์ฟเครื่องมือบัญชีครบ จนกว่าเราจะประกาศปิดล่วงหน้า · ถ้าอยากให้รายการสั้นลง ลบตัวเดิมออกได้หลังล็อกอิน `aiya-acct` แล้ว
+
 ## 1.0.10-alpha (2026-10-11)
 
 - ย้าย connector `aiya-agents` กลับไปชี้ `https://mcp.aiya.me/mcp` (#3999) วันนี้พิสูจน์จาก URL จริงแล้วว่า discovery ของทั้งสองโฮสต์ประกาศ resource = `https://mcp.aiya.me/mcp` ตรงกัน ไคลเอนต์ที่เข้มงวดจึงไม่ปฏิเสธ connector นี้อีก bump เวอร์ชันตาม

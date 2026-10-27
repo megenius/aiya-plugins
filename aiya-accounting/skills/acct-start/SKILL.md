@@ -74,5 +74,6 @@ description: >-
 - `acct_product_map_list`
 - `acct_product_map_set`
 - `hr_employee_create` · `hr_employee_update` · `hr_employee_terminate` · `hr_employee_list` · `hr_employee_get`
+- `hr_payroll_run_pay_request`
 - `acct_settings_get` · `acct_settings_require_mfa_set`
 <!-- /mcp-tools -->

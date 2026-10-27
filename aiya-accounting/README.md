@@ -35,12 +35,14 @@
 
 ถ้าหลังติดตั้งมีข้อความบอกให้ `/reload-plugins` ก็พิมพ์ตามนั้น
 
-## ขั้นที่ 2 ล็อกอิน connector aiya-agents
+## ขั้นที่ 2 ล็อกอิน connector aiya-acct
 
-ปลั๊กอินนี้ประกาศ connector `aiya-agents` (`https://mcp.aiya.me/mcp`) ไว้ใน `.mcp.json`
+ปลั๊กอินนี้ประกาศ connector `aiya-acct` (`https://mcp.aiya.me/acct`) ไว้ใน `.mcp.json`
+
+> เคยต่อ connector เดิม `aiya-agents` (`https://mcp.aiya.me/mcp`) ไว้แล้ว: **ไม่ต้องลบ** ใช้ได้ทั้งคู่ เพราะ /mcp ยังมีเครื่องมือบัญชีครบจนกว่าเราจะประกาศปิดล่วงหน้า · จะลบตัวเดิมก็ได้หลังล็อกอิน `aiya-acct` แล้ว
 ต้องล็อกอินแบบ OAuth ครั้งแรกก่อนใช้
 
-1. หลังติดตั้งปลั๊กอิน เปิดหน้าจัดการ MCP connector ของ Claude (ใน Claude Code ใช้ `/mcp` แล้วเลือก `aiya-agents`)
+1. หลังติดตั้งปลั๊กอิน เปิดหน้าจัดการ MCP connector ของ Claude (ใน Claude Code ใช้ `/mcp` แล้วเลือก `aiya-acct`)
 2. กด login/authorize แล้วล็อกอินด้วย**บัญชี AIYA ของคุณ**
 3. ยืนยันสิทธิ์ (scope) ที่ขอ แล้วกลับมาที่ Claude เมื่อเห็นสถานะ connected แปลว่าใช้งานได้
 
