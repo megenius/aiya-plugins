@@ -33,6 +33,7 @@ description: >-
 แล้วงานงวดนั้นบนกระดานถูกปิดและหายจากรายการเลยกำหนด ใช้ `code` กับ `period` ตามที่ `acct_tax_calendar` คืนมา
 - **ตัวตน AI เรียกไม่ได้** ต้องเป็นคนที่ยื่นจริงเป็นผู้บันทึก
 - เครื่องมือนี้ไม่ยื่นแบบให้ ไม่จ่ายเงิน **ห้ามเดาเลขที่ยื่นแทนคน** ต้องได้จากคนที่ยื่นจริงเท่านั้น
+- ปิดงวด ภ.พ.30 ด้วย `acct_vat_close_propose` หลังตรวจแผนด้วย `acct_vat_close_preview` · ผู้อนุมัติกดลงบัญชีในหน้า ERP เท่านั้น
 
 ## แนบไฟล์หลักฐานการยื่น
 
@@ -69,6 +70,7 @@ description: >-
 - `acct_tax_profile_get`
 - `acct_tax_profile_set`
 - `acct_tax_filing_record`
+- `acct_vat_close_propose` · `acct_vat_close_preview`
 - `acct_tax_filing_attach_file`
 - `acct_tax_filing_file_list`
 - `acct_tax_filing_file_view`

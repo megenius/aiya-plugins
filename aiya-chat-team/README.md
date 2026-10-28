@@ -2,6 +2,8 @@
 
 Add more teams: Customize > Plugins > Discover > New plugins > + (do not re-add the marketplace repo).
 
+Update an older install (Claude Code, in a shell): `claude plugin marketplace update aiya`, then `claude plugin update aiya-chat-team@aiya`, then restart Claude Code. The main AIYA connector moves from `agents.aiya.me` or `mcp.aiya.me` to `mcp.aiya.ai`; log in once more. On claude.ai: reinstall the plugin from Customize > Plugins.
+
 After upgrading: turn off or remove the old `aiya-agents` connector (`https://mcp.aiya.me/mcp`) in Settings > Connectors, so answers come from the new connector and not the old one.
 
 ปลั๊กอิน Claude Cowork / Claude Code สำหรับทีมตอบแชท AI ของร้านค้า AIYA

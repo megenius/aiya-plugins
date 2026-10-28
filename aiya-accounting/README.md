@@ -2,6 +2,8 @@
 
 Add more teams: Customize > Plugins > Discover > New plugins > + (do not re-add the marketplace repo).
 
+Update an older install (Claude Code, in a shell): `claude plugin marketplace update aiya`, then `claude plugin update aiya-accounting@aiya`, then restart Claude Code. The main AIYA connector moves from `agents.aiya.me` or `mcp.aiya.me` to `mcp.aiya.ai`; log in once more. On claude.ai: reinstall the plugin from Customize > Plugins.
+
 After upgrading: turn off or remove the old connector (`aiya-agents` at `https://mcp.aiya.me/mcp`, or `aiya-acct` at `https://mcp.aiya.me/acct` from 1.0.11) in Settings > Connectors, so answers come from the new connector and not the old one.
 
 ปลั๊กอินนี้คือ **คู่มือกำกับขั้นตอน** ให้ผู้ช่วย AI ทำงานบัญชีกับระบบของ AIYA ได้แม่นขึ้น

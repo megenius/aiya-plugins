@@ -2,6 +2,8 @@
 
 Add more teams: Customize > Plugins > Discover > New plugins > + (do not re-add the marketplace repo).
 
+Update an older install (Claude Code, in a shell): `claude plugin marketplace update aiya`, then `claude plugin update aiya-marketing-team@aiya`, then restart Claude Code. The main AIYA connector moves from `agents.aiya.me` or `mcp.aiya.me` to `mcp.aiya.ai`; log in once more. On claude.ai: reinstall the plugin from Customize > Plugins.
+
 After upgrading: turn off or remove the old `aiya-agents` connector (`https://mcp.aiya.me/mcp`) in Settings > Connectors, so answers come from the new connector and not the old one.
 
 ถ้าเรียกเครื่องมือ `mkt_` ไม่ได้หรือไม่เห็นเครื่องมือ `mkt_` เลย ให้บอกเจ้าของร้านตรงๆ ว่าเครื่องมือการตลาด AI ต้องเปิดสิทธิ์ "พนักงาน AI ตอบแชท" ของร้านก่อน แล้วทำงานต่อจากเครื่องมือ `page_` ที่มี หรือเป็นข้อความร่างเท่านั้น ห้ามแกล้งทำว่าเรียกได้ และห้ามบอกราคาหรือวันเปิดใช้
